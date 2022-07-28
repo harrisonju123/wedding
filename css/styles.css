@@ -78,7 +78,6 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   background: #333;
-  color: #ffffff;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 @media (min-width:992px) {
@@ -97,7 +96,6 @@ ul {
 }
 h1,
 h2 {
-  color: #ffffff;
   margin-top: 0;
 }
 h3 {
@@ -152,12 +150,7 @@ a:hover {
   padding-top:2em;
 }
 
-.navbar-default .navbar-toggle {
-  border-color: #ffffff;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
-}
+
 .hd-logo {
   text-align: center;
   padding-top: 15px;
@@ -246,7 +239,6 @@ a:hover {
   }
 }
 .hd-list-menu li a {
-  color: #ffffff !important;
   display: block;
   text-align: center;
   position: relative;
@@ -435,7 +427,6 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: #fff;
 }
 .page-background {
   position: fixed;
@@ -598,7 +589,6 @@ p {
     font-size: 13px;
     padding-top: 20px;
     padding-bottom: 30px;
-    border: 2px solid #ffffff;
   }
 }
 .countdown-icon {
@@ -758,7 +748,6 @@ p {
   content: '';
   width: 8px;
   height: 8px;
-  background: #fff;
   margin-left: -4px;
   top: 8px;
   border-radius: 4px;
@@ -2009,7 +1998,6 @@ body {
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body, html {
@@ -2157,7 +2145,6 @@ input:focus, input:active {
   top: 0;
   height: 100%;
   width: 51%;
-  background: #fff;
 }
 
 .chevron:before {
@@ -2272,7 +2259,6 @@ input:focus, input:active {
 .menu-toggle span {
   width: 24px;
   height: 2px;
-  background: #fff;
   display: block;
   position: absolute;
   -webkit-transition: all 0.3s ease;
@@ -2284,7 +2270,6 @@ input:focus, input:active {
   content: '';
   display: block;
   width: 24px;
-  background: #fff;
   height: 2px;
   position: absolute;
   -webkit-transition: all 0.3s ease;
@@ -2319,7 +2304,6 @@ input:focus, input:active {
 .mob-list-menu {
   position: absolute;
   top: 0;
-  background: #fff;
   width: 100vw;
   left: 0;
   display: none;
@@ -2373,7 +2357,6 @@ input:focus, input:active {
   top: 50%;
   left: 50%;
   margin-top: 80px;
-  -webkit-box-shadow: inset 0 0 0 1px #fff;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
 }
@@ -2382,7 +2365,6 @@ input:focus, input:active {
   content: '';
   width: 8px;
   height: 8px;
-  background: #fff;
   margin-left: -4px;
   top: 8px;
   border-radius: 4px;
@@ -2971,7 +2953,6 @@ input:focus, input:active {
   margin-top: -12px;
   margin-left: -37.96px;
   font-family: 'Open Sans';
-  color: #fff;
 }
 
 .gallery-more:hover {
@@ -2987,7 +2968,6 @@ input:focus, input:active {
 .presence-form {
   margin-top: 52px;
   width: 70%;
-  background: #fff;
   -webkit-box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
   margin: 0 auto;
@@ -3095,7 +3075,6 @@ input:focus, input:active {
 
 .form-btn:hover {
   background: #dfc090;
-  color: #fff;
 }
 
 .presence-plant-one {
@@ -3180,7 +3159,6 @@ input:focus, input:active {
   width: 100%;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  background-color: #ffffff;
   border-top: none;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -3721,7 +3699,6 @@ label {
 
 #credits {
   background: url("../img/credits.jpg") no-repeat center top/cover;
-  color: #fff;
 }
 
 .credits-blur {
@@ -3734,7 +3711,6 @@ label {
 .credits-title h2 {
   font-size: 70px;
   font-family: "PriscillaScript-Regular";
-  color: #fff;
   line-height: 81px;
 }
 
