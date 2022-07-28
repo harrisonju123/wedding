@@ -1,4 +1,5 @@
-<html lang="en" class=" webkit chrome mac js"><head>
+<html lang="en" class=" webkit chrome mac js">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,29 +31,44 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- >> /CSS
     ============================================================================== -->
-    <style id="holderjs-style" type="text/css"></style><style>
-    .flipX video::-webkit-media-text-track-display {
-        transform: matrix(-1, 0, 0, 1, 0, 0) !important;
-    }
-    .flipXY video::-webkit-media-text-track-display {
-        transform: matrix(-1, 0, 0, -1, 0, 0) !important;
-    }
-    .flipXYX video::-webkit-media-text-track-display {
-        transform: matrix(1, 0, 0, -1, 0, 0) !important;
-    }</style><style>
-    @keyframes blinkWarning {
-        0% { color: red; }
-        100% { color: white; }
-    }
-    @-webkit-keyframes blinkWarning {
-        0% { color: red; }
-        100% { color: white; }
-    }
-    .blinkWarning {
-        -webkit-animation: blinkWarning 1s linear infinite;
-        -moz-animation: blinkWarning 1s linear infinite;
-        animation: blinkWarning 1s linear infinite;
-    }</style></head>
+    <style id="holderjs-style" type="text/css"></style>
+    <style>
+        .flipX video::-webkit-media-text-track-display {
+            transform: matrix(-1, 0, 0, 1, 0, 0) !important;
+        }
+
+        .flipXY video::-webkit-media-text-track-display {
+            transform: matrix(-1, 0, 0, -1, 0, 0) !important;
+        }
+
+        .flipXYX video::-webkit-media-text-track-display {
+            transform: matrix(1, 0, 0, -1, 0, 0) !important;
+        }</style>
+    <style>
+        @keyframes blinkWarning {
+            0% {
+                color: red;
+            }
+            100% {
+                color: white;
+            }
+        }
+
+        @-webkit-keyframes blinkWarning {
+            0% {
+                color: red;
+            }
+            100% {
+                color: white;
+            }
+        }
+
+        .blinkWarning {
+            -webkit-animation: blinkWarning 1s linear infinite;
+            -moz-animation: blinkWarning 1s linear infinite;
+            animation: blinkWarning 1s linear infinite;
+        }</style>
+</head>
 <body>
 
 <!-- Page Loader
@@ -74,11 +90,15 @@
     <div class="bg-mask viewport" style="min-height: 247px;"></div>
     <!-- /background-mask -->
     <!-- background-slideshow -->
-    <div class="bg-slideshow" style="position: relative;"><div class="page-background viewport cycle-slide cycle-sentinel" style="background-image: url(&quot;img/forest-bg.jpeg&quot;); top: 0px; left: 0px; opacity: 1; z-index: 99; position: static; visibility: hidden; display: block; min-height: 247px;"></div>
+    <div class="bg-slideshow" style="position: relative;">
+        <div class="page-background viewport cycle-slide cycle-sentinel"
+             style="background-image: url(&quot;img/forest-bg.jpeg&quot;); top: 0px; left: 0px; opacity: 1; z-index: 99; position: static; visibility: hidden; display: block; min-height: 247px;"></div>
         <!-- slideshow-item -->
 
         <!-- /slideshow-item -->
-        <div class="page-background viewport cycle-slide cycle-slide-active" style="background-image: url(&quot;img/forest-bg.jpeg&quot;); position: absolute; top: 0px; left: 0px; opacity: 1; display: block; visibility: visible; z-index: 99; min-height: 247px;"></div></div>
+        <div class="page-background viewport cycle-slide cycle-slide-active"
+             style="background-image: url(&quot;img/forest-bg.jpeg&quot;); position: absolute; top: 0px; left: 0px; opacity: 1; display: block; visibility: visible; z-index: 99; min-height: 247px;"></div>
+    </div>
     <!--/Background-slideshow -->
 </div>
 <!-- Background-container -->
@@ -87,52 +107,44 @@
 <!-- Main Content
 ================================================== -->
 <div id="body" class="viewport animated fadeInUp" style="opacity: 0; min-height: 247px;">
-    <div id="home" class="container">
-        <!-- Header -->
-        <header id="header" class="navbar navbar-default navbar-static-top">
-            <div class="clearfix">
-                <!-- logo -->
-                <div class="hd-logo">
-                    <a href="index.html">
-                        <span class="couple-menu-title">Wedding</span>
-                    </a>
-                </div>
-                <!-- /logo -->
-                <!-- responsive menu -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Navigation Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- /responsive menu -->
-                <!-- menu -->
-                <nav class="hd-nav nav navbar-nav navbar-right navbar-collapse collapse">
-                    <ul class="nav navbar-nav hd-list-menu clearfix">
-                        <li>
-                            <a href="#about">
-                                <span class="link-title">About</span>
-                                <span class="link-subtitle">our history</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#gallery">
-                                <span class="link-title">Gallery</span>
-                                <span class="link-subtitle">Our pictures</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#ceremony">
-                                <span class="link-title">Ceremony</span>
-                                <span class="link-subtitle">All information</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /menu -->
+    <!-- Header -->
+    <header id="header" class="navbar navbar-default navbar-static-top">
+        <div class="clearfix">
+            <!-- logo -->
+            <div class="hd-logo">
+                <a href="index.html">
+                    <span class="couple-menu-title">Wedding</span>
+                </a>
             </div>
-        </header>
-        <!-- /header -->
+            <!-- /logo -->
+            <!-- menu -->
+            <nav class="hd-nav nav navbar-nav navbar-right navbar-collapse collapse">
+                <ul class="nav navbar-nav hd-list-menu clearfix">
+                    <li>
+                        <a href="#about">
+                            <span class="link-title">About</span>
+                            <span class="link-subtitle">our history</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#gallery">
+                            <span class="link-title">Gallery</span>
+                            <span class="link-subtitle">Our pictures</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ceremony">
+                            <span class="link-title">Ceremony</span>
+                            <span class="link-subtitle">All information</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /menu -->
+        </div>
+    </header>
+    <!-- /header -->
+    <div id="home" class="container">
         <div class="boxed-content">
             <!-- content -->
             <div class="page-content page-home">
@@ -159,177 +171,77 @@
                         <!-- countdown ( Edit it on main.js )-->
                         <div class="row">
                             <div class="col-xs-8 col-xs-offset-2">
-                                <div id="countdown" class="row"><div class="countdown-col-wrapper col-xs-3"><div class="countdown-col"><span class="countdown-time"> 0 </span> Days </div></div> <div class="countdown-col-wrapper col-xs-3"><div class="countdown-col"><span class="countdown-time"> 00 </span> Hours </div></div><div class="countdown-col-wrapper col-xs-3"><div class="countdown-col"><span class="countdown-time"> 00 </span> Minutes </div></div><div class="countdown-col-wrapper col-xs-3"><div class="countdown-col"><span class="countdown-time"> 00 </span> Seconds </div></div></div>
+                                <div id="countdown" class="row">
+                                    <div class="countdown-col-wrapper col-xs-3">
+                                        <div class="countdown-col"><span class="countdown-time"> 0 </span> Days</div>
+                                    </div>
+                                    <div class="countdown-col-wrapper col-xs-3">
+                                        <div class="countdown-col"><span class="countdown-time"> 00 </span> Hours</div>
+                                    </div>
+                                    <div class="countdown-col-wrapper col-xs-3">
+                                        <div class="countdown-col"><span class="countdown-time"> 00 </span> Minutes
+                                        </div>
+                                    </div>
+                                    <div class="countdown-col-wrapper col-xs-3">
+                                        <div class="countdown-col"><span class="countdown-time"> 00 </span> Seconds
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- /countdown -->
                         <!-- countdown title bot -->
-                        <h3 class="countdown-title countdown-title2"><span class="countdown-title-borders">Until we get Married!</span></h3>
-                        <!-- countdown title /bot -->
-                    </div>
-                </div>
-                <!-- /Countdown Container -->
-            </div>
-            </footer>
-            <!-- /footer -->
-        </div>
-    </div>
-    <div id="about" class="boxed-content">
-        <!-- content -->
-        <div class="page-content clearfix">
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <!-- Section: About Us -->
-                    <div class="section-about-us">
-                        <!-- Title 1 -->
-                        <h1 class="title1 couple-title1 title1-border">About Us</h1>
-                        <!-- /Title 1 -->
-                        <div class="row">
-                            <!-- Groom -->
-                            <div class="col-sm-6">
-                                <div class="about-item">
-                                    <div class="about-item-picture">
-                                        <img src="img/groom1.jpg" alt="">
-                                    </div>
-                                    <h2 class="about-item-title">Harrison Ju</h2>
-                                    <h3 class="about-item-subtitle">The Groom</h3>
-                                </div>
-                            </div>
-                            <!-- /Groom -->
-
-                            <!-- Bride -->
-                            <div class="col-sm-6">
-                                <div class="about-item">
-                                    <div class="about-item-picture">
-                                        <img src="img/bride1.jpg" alt="">
-                                    </div>
-                                    <h2 class="about-item-title">Haewon Choe</h2>
-                                    <h3 class="about-item-subtitle">The Bride</h3>
-                                </div>
-                            </div>
-                            <!-- /Bride -->
+                        <h3 class="countdown-title countdown-title2"><span class="countdown-title-borders">Until we get Married!</span>
+                        </h3>
+                        <div class="icon-scroll">
+                            <div/>
+                            <!-- countdown title /bot -->
                         </div>
-
-
                     </div>
-
-                    <!-- /Section: About Us -->
-                    <!-- Section: Timeline -->
-                    <div class="section-timeline">
-                        <!-- Title 1 -->
-                        <h2 class="title1 couple-title1 title1-border">Our Timeline</h2>
-                        <!-- /Title 1 -->
-                        <!-- timeline -->
-                        <ul class="timeline">
-                            <!-- item -->
-                            <li>
-                                <!-- badge -->
-                                <div class="timeline-badge">
-                                    <span class="timeline-date">10</span>
-                                    <span class="timeline-year">2018</span>
-                                </div>
-                                <!-- /badge -->
-                                <!-- panel -->
-                                <div class="timeline-panel">
-                                    <!-- item heading -->
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Day we meet each other</h4>
-                                        <p><small class="text-muted">A special day for us!</small></p>
-                                    </div>
-                                    <!-- /item heading -->
-                                    <!-- item body -->
-                                    <div class="timeline-body">
-                                        <p>We met each other for the first time in October 2019 for morning prayer group at church. We didn't have a conversation, but it would be the start of something great! </p>
-                                    </div>
-                                    <!-- /item body -->
-                                </div>
-                                <!-- /panel -->
-                            </li>
-                            <!-- /item -->
-                            <!-- item -->
-                            <li class="timeline-inverted">
-                                <!-- badge -->
-                                <div class="timeline-badge bg-color1">
-                                    <span class="timeline-date">12/07</span>
-                                    <span class="timeline-year">2018</span>
-                                </div>
-                                <!-- /badge -->
-                                <!-- panel -->
-                                <div class="timeline-panel">
-                                    <!-- item heading -->
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Day we start dating</h4>
-                                    </div>
-                                    <!-- /item heading -->
-                                    <!-- item body -->
-                                    <div class="timeline-body">
-                                        <p>We decided to make our relationship official.</p>
-                                    </div>
-                                    <!-- /item body -->
-                                </div>
-                                <!-- /panel -->
-                            </li>
-                            <!-- /item -->
-                            <!-- item -->
-                            <li>
-                                <!-- badge -->
-                                <div class="timeline-badge">
-                                    <span class="timeline-date">06/24</span>
-                                    <span class="timeline-year">2013</span>
-                                </div>
-                                <!-- /badge -->
-                                <!-- panel -->
-                                <div class="timeline-panel">
-                                    <!-- item heading -->
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Our Engagement</h4>
-                                        <p><small class="text-muted">A funny day</small></p>
-                                    </div>
-                                    <!-- /item heading -->
-                                    <!-- item body -->
-                                    <div class="timeline-body">
-                                        <img src="img/engagement.jpg" alt="">
-                                    </div>
-                                    <!-- /item body -->
-                                </div>
-                                <!-- /panel -->
-                            </li>
-                            <!-- /item -->
-                            <!-- item -->
-                            <li class="timeline-inverted">
-                                <!-- badge -->
-                                <div class="timeline-badge bg-color1">
-                                    <span class="timeline-date">10/10</span>
-                                    <span class="timeline-year">2022</span>
-                                </div>
-                                <!-- /badge -->
-                                <!-- panel -->
-                                <div class="timeline-panel">
-                                    <!-- item heading -->
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">Our Wedding Day</h4>
-                                    </div>
-                                    <!-- /item heading -->
-                                    <!-- item body -->
-                                    <div class="timeline-body">
-                                        <p></p>
-                                    </div>
-                                    <!-- /item body -->
-                                </div>
-                                <!-- /panel -->
-                            </li>
-                            <!-- /item -->
-                        </ul>
-                        <!-- /timeline -->
+                    <!-- /Countdown Container -->
+                </div>
+                </footer>
+                <!-- /footer -->
+            </div>
+        </div>
+        <section id="save-the-date" class="boxed-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="save-the-date__info save-the-date save-the-date__story-item-medium">
+                            <div class="save-the-date__story-item-medium__wrapper">
+                                <img src="img/flower_frame.png" alt="">
+                                <p><br>Invitation</br></p>
+                            </div>
+                            <p>We want to welcome you to our wedding ceremony. Words words words words  we really blah tahnk you for coming here grace is watching youtube and playing candy crush while i work on this.</p>
+                        </div>
                     </div>
-                    <!-- /Section: Timeline -->
+                </div>
+            </div>
+        </section>
+        <div id="about" class="boxed-content">
+            <div id="story" class="save-the-date__story">
+                <div class="save-the-date__story-item">
+                    <div class="save-the-date__story-item__wrapper">
+                        <img src="img/bride1.jpg" alt="">
+                    </div>
+                    <span>Bride</span>
+                    <h3><a href="#">Haewon Choe</a></h3>
+                    <p>Haewon was born and raised in San Diego, California. She studied nursing at UCLA and took a leap of faith when she moved to the East Coast to follow her dream job.</p>
+                    <span>Love you</span>
+                </div>
+                <div class="save-the-date__story-item">
+                    <div class="save-the-date__story-item__wrapper">
+                        <img src="img/groom1.jpg" alt="">
+                    </div>
+                    <span>Groom</span>
+                    <h3><a href="#">Harrison Ju</a></h3>
+                    <p>Harrison was born and raised in San Diego, California. She studied nursing at UCLA and took a leap of faith when she moved to the East Coast to follow her dream job.</p>
+                    <span>forever</span>
                 </div>
             </div>
         </div>
-        <!-- /content -->
-    </div>
-    <div id="gallery" class="container">
-        <div class="boxed-content">
+        <div id="gallery" class="boxed-content">
             <!-- content -->
             <div class="page-content">
                 <div class="row">
@@ -511,87 +423,88 @@
             </div>
             <!-- /content -->
         </div>
-    </div>
-    <div id="ceremony" class="boxed-content">
-        <!-- content -->
-        <div class="page-content">
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <!-- mai title -->
-                    <h2 class="title1 couple-title1 title1-border">Ceremony</h2>
-                    <div>
-                        <!-- Map -->
+        <div id="ceremony" class="boxed-content">
+            <!-- content -->
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <!-- mai title -->
+                        <h2 class="title1 couple-title1 title1-border">Ceremony</h2>
                         <div>
-                            <div class="ceremony-item">
-                                <h3 class="title4">Dress Garden</h3>
-                                <p>Seoul, Gangnam-gu, Cheongdam-dong, 71-8</p>
-                                <p>October 10 2022, 4:30PM</p>
-                                <!-- iframe -->
-                                <div class="iframe-wrapper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4600157095897!2d127.05369211548775!3d37.52065207980646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca465e0734fd5%3A0x49453afaab972502!2z65Oc66CI7Iqk6rCA65Og!5e0!3m2!1sen!2sus!4v1658707286502!5m2!1sen!2sus" height="420" style="border:0;"></iframe>
+                            <!-- Map -->
+                            <div>
+                                <div class="ceremony-item">
+                                    <h3 class="title4">Dress Garden</h3>
+                                    <p>Seoul, Gangnam-gu, Cheongdam-dong, 71-8</p>
+                                    <p>October 10 2022, 4:30PM</p>
+                                    <!-- iframe -->
+                                    <div class="iframe-wrapper">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4600157095897!2d127.05369211548775!3d37.52065207980646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca465e0734fd5%3A0x49453afaab972502!2z65Oc66CI7Iqk6rCA65Og!5e0!3m2!1sen!2sus!4v1658707286502!5m2!1sen!2sus"
+                                                height="420" style="border:0;"></iframe>
+                                    </div>
+                                    <!-- /iframe -->
                                 </div>
-                                <!-- /iframe -->
                             </div>
+                            <!-- /Map -->
                         </div>
-                        <!-- /Map -->
                     </div>
+
                 </div>
-
             </div>
+            <!-- /content -->
+            <!-- footer -->
+            <footer id="footer">
+                <p class="footer-icon"><img src="img/ft-icon.png" alt=""></p>
+                <p class="quote-content">"When i saw you i fell in love, and you smiled because you knew."</p>
+                <p class="quote-author">Willian Shakespeare</p>
+            </footer>
+            <!-- /footer -->
         </div>
-        <!-- /content -->
-        <!-- footer -->
-        <footer id="footer">
-            <p class="footer-icon"><img src="img/ft-icon.png" alt=""></p>
-            <p class="quote-content">"When i saw you i fell in love, and you smiled because you knew."</p>
-            <p class="quote-author">Willian Shakespeare</p>
-        </footer>
-        <!-- /footer -->
     </div>
-</div>
-<!-- /Main Content
-================================================== -->
+    <!-- /Main Content
+    ================================================== -->
 
-<!-- >> JS
-============================================================================== -->
+    <!-- >> JS
+    ============================================================================== -->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="vendor/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!-- Validate -->
-<script src="vendor/validate.js"></script>
-<!-- Countdown -->
-<script src="vendor/jquery.countdown.min.js"></script>
-<!-- Mansonry -->
-<script src="vendor/imagesloaded.pkgd.min.js"></script>
-<script src="vendor/masonry.pkgd.min.js"></script>
-<!-- Modal box-->
-<script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
-<!-- Cycle -->
-<script src="vendor/cycle2.js"></script>
-<!-- SmoothScroll -->
-<script src="vendor/smoothScroll.js"></script>
-<!-- Placeholder for IE -->
-<script src="vendor/placeholders.jquery.min.js"></script>
-<!-- Crossbrowser -->
-<script src="js/cross-browser.js"></script>
-<!-- Main Config -->
-<script src="js/main.js"></script>
-<!-- Holder -->
-<script src="vendor/holder.js"></script>
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="vendor/html5shiv.js"></script>
-<script src="vendor/respond.min.js"></script>
-<![endif]-->
-<!-- >> /JS
-============================================================================= -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Validate -->
+    <script src="vendor/validate.js"></script>
+    <!-- Countdown -->
+    <script src="vendor/jquery.countdown.min.js"></script>
+    <!-- Mansonry -->
+    <script src="vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/masonry.pkgd.min.js"></script>
+    <!-- Modal box-->
+    <script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+    <!-- Cycle -->
+    <script src="vendor/cycle2.js"></script>
+    <!-- SmoothScroll -->
+    <script src="vendor/smoothScroll.js"></script>
+    <!-- Placeholder for IE -->
+    <script src="vendor/placeholders.jquery.min.js"></script>
+    <!-- Crossbrowser -->
+    <script src="js/cross-browser.js"></script>
+    <!-- Main Config -->
+    <script src="js/main.js"></script>
+    <!-- Holder -->
+    <script src="vendor/holder.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="vendor/html5shiv.js"></script>
+    <script src="vendor/respond.min.js"></script>
+    <![endif]-->
+    <!-- >> /JS
+    ============================================================================= -->
 
-<!-- analytics -->
+    <!-- analytics -->
 
-<!-- /analytics -->
+    <!-- /analytics -->
 
 
-</body></html>
+</body>
+</html>
