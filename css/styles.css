@@ -82,7 +82,6 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 @media (min-width:992px) {
-  padding: 0px;
 }
 ul {
   margin: 0;
@@ -819,7 +818,6 @@ p {
   display: block;
   width: 100%;
   height: 18px;
-  background: url('../img/pattern-border2.png') repeat-x;
   margin-bottom: 40px;
   margin-top: 30px;
 }
@@ -1992,73 +1990,9 @@ textarea.form-control {
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
-@font-face {
-  font-family: 'PriscillaScript-Regular';
-  src: url("../fonts/PriscillaScript-Regular.eot");
-  src: url("../fonts/PriscillaScript-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PriscillaScript-Regular.svg#PriscillaScript-Regular") format("svg"), url("../fonts/PriscillaScript-Regular.ttf") format("truetype"), url("../fonts/PriscillaScript-Regular.woff") format("woff"), url("../fonts/PriscillaScript-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'SignericaFat';
-  src: url("../fonts/SignericaFat.svg#SignericaFat") format("svg"), url("../fonts/SignericaFat.ttf") format("truetype"), url("../fonts/SignericaFat.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Signerica_Fat';
-  src: url("../fonts/Signerica_Fat.eot");
-  src: url("../fonts/Signerica_Fat.eot?#iefix") format("embedded-opentype"), url("../fonts/Signerica_Fat.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'SegoeUI-Light';
-  src: url("../fonts/SegoeUI-Light.svg#SegoeUI-Light") format("svg"), url("../fonts/SegoeUI-Light.ttf") format("truetype"), url("../fonts/SegoeUI-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'segoe-light';
-  src: url("../fonts/segoe-light.eot");
-  src: url("../fonts/segoe-light.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe-light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SegoeUI-Semibold';
-  src: url("../fonts/SegoeUI-Semibold.svg#SegoeUI-Semibold") format("svg"), url("../fonts/SegoeUI-Semibold.ttf") format("truetype"), url("../fonts/SegoeUI-Semibold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'segoe-semibold';
-  src: url("../fonts/segoe-semibold.eot");
-  src: url("../fonts/segoe-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe-semibold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SegoeUI';
-  src: url("../fonts/SegoeUI.svg#SegoeUI") format("svg"), url("../fonts/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'segoe-regular';
-  src: url("../fonts/segoe-regular.eot");
-  src: url("../fonts/segoe-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 html {
   overflow-x: hidden;
