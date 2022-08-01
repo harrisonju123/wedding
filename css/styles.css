@@ -1,3 +1,16 @@
+@import url("https://www.hermes.com/sites/all/themes/custom/hermes/fonts/d93452fb-6f2b-4f8c-bb51-7a7dbfbc1566.woff2");
+@import url("font-awesome.min.css");
+@import url("hancom.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://www.hermes.com/sites/all/themes/custom/hermes/fonts/89294146-207c-4803-91fe-338f0d0094bd.woff2");
+@import url("HancomHoonminjeongeumH.ttf");
+
+@font-face {
+  font-family: koreanFont;
+  src: url("HancomHoonminjeongeumH.otf");
+}
+
 /*------------------------------------------------------------------
 [Main Theme Styles]
 
@@ -60,6 +73,10 @@ html {
 .font2 {
   font-family: 'Dancing Script',cursive;
 }
+
+.font3 {
+  font-family: koreanFont, sans-serif;
+}
 .bold {
   font-weight: bold;
 }
@@ -99,17 +116,20 @@ h2 {
   margin-top: 0;
 }
 h3 {
-  color: #ffffff;
+  color: black;
 }
 .btn2 {
   background-color: #3f515cc9;
 }
 .boxed-content {
-  background: url('../img/bg-black-mask.png');
-  margin-top: 30px;
-  padding-bottom: 0px;
+  margin-top: 1rem;
+  padding-bottom: 0;
   z-index: 0;
+  opacity:50;
   position: relative;
+}
+.container {
+  height:100vh;
 }
 .clearfix {
   clear: both;
@@ -146,21 +166,87 @@ a:hover {
   margin-bottom: 0;
 }
 
-#header .hd-logo {
-  padding-top:2em;
+.nav li {
+  float: right;
 }
 
+#header .hd-logo {
+  /*background-color:lightsalmon;*/
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.firstbg {
+  background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup1.jpeg");
+  background-position: 0;
+  padding-top: 0;
+  height: 69%;
+  width: 70%;
+  margin-left: 16rem;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .firstbg {
+    margin-left: -5rem;
+    width: 120%;
+  }
+}
+
+.secondbg {
+  background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup2.png");
+  background-position: 110%;
+  padding-top:10rem;
+}
+
+.thirdbg {
+  background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
+  background-position: 0;
+  padding-top: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 0rem;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .thirdbg {
+    margin-left: -5rem;
+    width: 120%;
+  }
+}
+
+.family-intro {
+  column-count:2;
+  column-gap:64vh;
+}
+.family-intro-item {
+  margin-top:15rem;
+  height:45vh;
+}
 
 .hd-logo {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 0px;
-  margin-left: 15px;
-  margin-bottom: 15px;
   width: 100px;
 }
 .hd-logo img {
-  width: 100%;
+  width: 5rem;
 }
 @media (min-width: 768px) {
   .hd-logo {
@@ -170,7 +256,7 @@ a:hover {
     padding-top: 35px;
   }
   .hd-logo img {
-    width: 89px;
+    width: 5rem;
   }
 }
 @media (min-width:992px) {
@@ -179,8 +265,51 @@ a:hover {
     width: 220px;
   }
   .hd-logo img {
-    width: 150px;
+    width: 5rem;
   }
+}
+
+nav.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100^;
+  z-index: 99;
+}
+nav.transparent {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: none;
+}
+nav.transparent .menu li {
+  opacity: .7;
+}
+nav.transparent.scrolled {
+  background: #fff;
+}
+nav.transparent.light.scrolled {
+  background: #fff;
+}
+nav.transparent.light.scrolled .menu li a {
+  color: #222;
+}
+nav.transparent.light.scrolled span {
+  color: #222;
+}
+nav.light .menu li a,
+nav.light span {
+  color: #black;
+}
+nav.light .line-1,
+nav.light .line-2,
+nav.light .line-3 {
+  background: #fff;
+}
+nav.light.scrolled .line-1,
+nav.light.scrolled .line-2,
+nav.light.scrolled .line-3 {
+  background: #222;
 }
 .hd-nav {
   background: #4b342e;
@@ -214,11 +343,6 @@ a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-@media (min-width: 768px) {
-  .hd-list-menu li {
-    border-left: 1px dashed #4b342e;
-  }
 }
 @media (min-width: 1200px) {
   .hd-list-menu li {
@@ -331,6 +455,10 @@ a:hover {
   margin-top: -62px !important;
 }
 .navbar-nav {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   margin: 0px 0px;
 }
 .navbar-collapse {
@@ -491,27 +619,74 @@ p {
 ========================================================== */
 .home-logo {
   text-align: center;
-  margin-bottom: 20px;
+  padding:2rem;
+}
+
+@media (max-width: 720px) {
+  .family-logo {
+    padding-top:25vh;
+  }
+
+  .thirdbg {
+    width:124%;
+    margin-left: -7rem;
+    height: 47%;
+  }
 }
 
 .couple-menu-title {
-  font-family: 'Dancing Script',cursive;
   font-size: 33px;
-  color: white;
+  color: black;
+}
+
+.invitation-text {
+  margin:1rem;
+  color:black;
 }
 
 .couple-title {
-  font-family: 'Dancing Script',cursive;
-  font-size: 36px;
+  font-size: 3rem;
+  color:black;
+  margin:1rem;
+  padding-left: 2rem;
 }
-@media (min-width: 768px) {
+
+.harrison-korean {
+  font-size: 3rem;
+  color:black;
+  padding-left: 2rem;
+}
+
+.harrison-english {
+  color:black;
+   font-style:italic;
+  padding-left:2rem;
+}
+
+.harrison-dad {
+  color:black;
+  font-size: 2.5rem;
+  margin-top:3rem;
+}
+
+.harrison-dad-english {
+  color:black;
+  font-style:italic;
+  padding-left:3rem;
+}
+
+.family-intro-item-2 {
+  padding-right:13rem;
+}
+@media (min-width: 320px) {
   .couple-title {
-    font-size: 60px;
+    margin-bottom:2rem;
+    margin-top:2rem;
   }
 }
 @media (min-width:992px) {
   .couple-title {
-    font-size: 90px;
+    font-size: 3rem;
   }
 }
 .page-content {
@@ -535,16 +710,16 @@ p {
   }
 }
 .page-home {
-  padding-top: 40px;
+  padding-top: 5rem;
 }
 @media (min-width: 768px) {
   .page-home {
-    padding-top: 40px;
+    padding-top: 5rem;
   }
 }
 @media (min-width:992px) {
   .page-home {
-    padding-top: 40px;
+    padding-top: 5rem;
   }
 }
 #countdown {
@@ -1225,40 +1400,14 @@ iframe {
   .mansonry-item {
     padding: 5px !important;
     margin-bottom: 0;
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
-    transform: rotate(-1deg);
   }
   .mansonry-item:nth-child(5n+0) {
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
   }
   .mansonry-item:nth-child(3n+0) {
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
   }
   .mansonry-item:nth-child(6n+0) {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    transform: rotate(3deg);
   }
   .mansonry-item:hover {
-    -webkit-transform: rotate(0deg) scale(1.1);
-    -moz-transform: rotate(0deg) scale(1.1);
-    -ms-transform: rotate(0deg) scale(1.1);
-    -o-transform: rotate(0deg) scale(1.1);
-    transform: rotate(0deg) scale(1.1);
-    z-index: 99;
   }
 }
 .mansonry-item a {
@@ -1716,7 +1865,7 @@ textarea.form-control {
   line-height: 38px;
   border-bottom: 1px dashed #ffffff;
   padding-bottom: 10px;
-  font-family: 'Dancing Script',cursive;
+  font-family: Courier New,Microsoft YaHei,微软雅黑,PingFang SC,萍方,Noto Sans,SimHei,黑体,monospace;
 }
 .post-title a {
   color: #ffffff;
@@ -1812,7 +1961,7 @@ textarea.form-control {
   }
 }
 .blog-single-title {
-  font-family: 'Dancing Script',cursive;
+  font-family: Courier New,Microsoft YaHei,微软雅黑,PingFang SC,萍方,Noto Sans,SimHei,黑体,monospace;
   font-size: 52px;
   line-height: 58px;
   text-align: center;
@@ -1893,7 +2042,7 @@ textarea.form-control {
   margin-bottom: 20px;
 }
 .module-title {
-  font-family: 'Dancing Script', cursive;
+  font-family: Courier New,Microsoft YaHei,微软雅黑,PingFang SC,萍方,Noto Sans,SimHei,黑体,monospace;
   margin-top: 0;
   border-bottom: 1px dashed #ffffff;
   padding-bottom: 5px;
@@ -1977,8 +2126,6 @@ textarea.form-control {
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
 
 
@@ -1989,7 +2136,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Courier New,Microsoft YaHei,微软雅黑,PingFang SC,萍方,Noto Sans,SimHei,黑体,monospace;
   font-weight: 400;
   font-size: 15px;
   overflow-x: hidden;
@@ -2010,7 +2157,7 @@ body, html {
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Courier New,Microsoft YaHei,微软雅黑,PingFang SC,萍方,Noto Sans,SimHei,黑体,monospace;
   font-weight: 400;
   font-size: 40px;
   color: #707070;
@@ -2467,6 +2614,13 @@ input:focus, input:active {
   justify-content: space-between;
 }
 
+.center {
+  width: 55%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
 .save-the-date__story-item {
   cursor: pointer;
   color: #707070;
@@ -2486,7 +2640,7 @@ input:focus, input:active {
 }
 
 .save-the-date__story-item__wrapper img {
-  width: 250px;
+  width: 65%;
 }
 
 .save-the-date__story-item h3 {

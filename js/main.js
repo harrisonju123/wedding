@@ -61,6 +61,15 @@ $(".blog-item a").on({
     }
 });
 
+// scrolled nav
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 0) {
+        $('nav').addClass('scrolled');
+    } else {
+        $('nav').removeClass('scrolled');
+    }
+});
+
 //Submenus
 $('.hd-list-menu li ul').hide();
 
