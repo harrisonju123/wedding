@@ -221,7 +221,7 @@
         addClassActive:true,
         paginationSpeed : 200,
         rewindSpeed : 200,
-        items:5,
+        items:3,
         autoPlay : true,
         autoHeight : true,
         touchDrag:true,

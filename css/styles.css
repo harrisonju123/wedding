@@ -880,7 +880,7 @@ p {
   }
 }
 .page-home {
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 @media (min-width: 768px) {
   .page-home {
@@ -1741,7 +1741,7 @@ iframe {
 .owl-theme .owl-controls .owl-buttons div {
   border: 1px solid rgba(255,255,255,0.18);
   height: 34px;
-  text-align: center;
+  text-align: center
   width: 34px;
   position: absolute;
   display: flex;

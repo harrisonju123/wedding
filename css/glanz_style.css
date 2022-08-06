@@ -12,6 +12,10 @@
 	text-align: center;
 }
 
+
+.map {
+	margin-top:20px;
+}
 .firstbg {
 	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg");
 	background-position: top;
@@ -25,18 +29,30 @@
 
 .thirdbg {
 	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
-	background-position: top;
+	background-position: 23px;
 	padding-top: 0;
 	height: 100%;
 	width: 100%;
-	background-size:contain;
+	background-size:100.1% 100%;
 	background-repeat:no-repeat;
 }
 
 .font3 {
 	font-family: koreanFont, sans-serif;
 	font-size:15px;
-	margin-bottom:10px;
+	margin-bottom:5px;
+}
+
+.font4 {
+	font-family: koreanFont, sans-serif;
+	font-size:25px;
+	margin-bottom:5px;
+}
+
+.font5 {
+	font-family: koreanFont, sans-serif;
+	font-size:20px;
+	margin-bottom:5px;
 }
 
 h2.font3.couple-title {
@@ -73,7 +89,7 @@ h2.font3.couple-title {
 
 .column {
 	float: left;
-	width: 50%;
+	width: 49%;
 }
 
 /* Clear floats after the columns */
@@ -311,7 +327,7 @@ h2 {
 }
 .gla_middle_titles h2 {
 	font:400 70px/80px marsha, Dosis;
-	margin-bottom: 60px;
+	margin-bottom: 5px;
 }
 
 .text-center .gla_middle_titles h2:after  {
@@ -498,7 +514,7 @@ blockquote footer {
 }
 .gla_black_txt .form-control {
 	background: rgba(255,255,255,0.1);
-	color: #fff;
+	color: black;
 }
 .gla_black_txt .form-control::-webkit-input-placeholder {color:#fff!important;}
 .gla_black_txt .form-control::-moz-placeholder          {color:#fff!important;}
@@ -1353,7 +1369,7 @@ label.error{
 	position: relative;
 }
 .gla_section .container {
-	padding-top: 132px;
+	padding-top: 5px;
 	padding-bottom: 128px;
 }
 .gla_lg_padding .container {
@@ -1373,7 +1389,7 @@ label.error{
 	padding-bottom: 46px;
 }
 .container.text-center h2 {
-	max-width: 60%;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -2457,8 +2473,8 @@ ul.mega-menu {
 	}
 
 	.page-content {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	.page-home {
@@ -6006,7 +6022,7 @@ footer {
 	}
 
 .gla_section .container {
-	padding-top: 56px;
+	padding-top: 5px;
 	padding-bottom: 46px;
 }
 
@@ -6070,7 +6086,7 @@ header nav.gla_transp_nav {
 
 .gla_middle_titles h2 {
 	font:900 30px/30px Dosis, Arial;
-	margin-bottom: 50px;
+	margin-bottom: 5px;
 }
 .gla_icon_boxes {
 	margin-right: 0;
