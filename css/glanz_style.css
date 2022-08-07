@@ -1689,7 +1689,7 @@ ul.mega-menu {
 	transition: all 0.3s;
 }
 .gla_transp_nav .gla_main_menu {
-	color: #fff;
+	color: black;
 }
 .gla_main_menu.active {
 	top: 17px!important;
@@ -2011,11 +2011,11 @@ ul.mega-menu {
 		/*04.3 Tranparency Menu*/
 		header nav.gla_transp_nav {
 			background-color: rgba(255,255,255,0);
-			color: #fff;
+			color: black;
 			border-bottom: 1px solid rgba(255,255,255,0.05);
 		}
 			header nav.gla_transp_nav a {
-				color: #fff;
+				color: black;
 			}
 			.gla_first_step header nav.gla_transp_nav {
 				background-color: rgba(255,255,255,0.9);
@@ -2056,7 +2056,7 @@ ul.mega-menu {
 				.gla_header_lang .gla_parent ul a {
 					padding: 5px 10px;
 					display: block;
-					color: #fff;
+					color: black;
 					-webkit-transition: all 0.3s;
 					-o-transition: all 0.3s;
 					transition: all 0.3s;
