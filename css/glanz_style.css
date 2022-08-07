@@ -12,6 +12,9 @@
 	text-align: center;
 }
 
+.hideNav {
+	display: none;
+}
 
 .map {
 	margin-top:20px;
@@ -2707,7 +2710,7 @@ ul.mega-menu {
 /*Music*/
 .gla_music_icon {
 	position: fixed;
-	color: #eee;
+	color: black;
 	bottom: 45px;
 	right: 50px;
 	z-index: 2;

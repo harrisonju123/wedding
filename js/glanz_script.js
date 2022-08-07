@@ -1,6 +1,28 @@
 (function($) {
     "use strict"; // Start of use strict
 
+
+    const nav = document.querySelector('#navigation');
+
+    function showNav(){
+        nav.classList.remove('hideNav');
+    }
+
+    function hidewNav(){
+        nav.classList.add('hideNav');
+    }
+    var currPos = window.scrollY;
+    document.addEventListener('scroll', () => {
+        if (window.scrollY < currPos) {
+            //scroll up
+            hidewNav();
+        } else {
+            //scroll down
+            showNav();
+        }
+        currPos = window.scrollY;
+    });
+
     /* Logo Lettering */
     var logo_rotate = $("header .gla_logo_animation").attr('data-rotate');
     if (logo_rotate!='') {
