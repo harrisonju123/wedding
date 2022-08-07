@@ -5782,8 +5782,7 @@ footer {
 		margin-bottom: 25px;
 	}
 	h2.font3.couple-title {
-		font-size: 3rem;
-		padding-right:25px;
+		font-size: 2.7rem;
 		margin-top:25px;
 	}
 	.mobile-height {
@@ -5793,6 +5792,7 @@ footer {
 		background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg);
 		background-position: 50%;
 		padding-top: 0;
+		padding-right:20px;
 		height: 97%;
 		width: 100%;
 		background-size: contain;
