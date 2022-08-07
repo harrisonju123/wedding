@@ -20,7 +20,7 @@
 	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg");
 	background-position: top;
 	padding-top: 0;
-	height: 100%;
+	height: 87%;
 	width: 100%;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -1370,7 +1370,7 @@ label.error{
 }
 .gla_section .container {
 	padding-top: 5px;
-	padding-bottom: 128px;
+	padding-bottom: 0px;
 }
 .gla_lg_padding .container {
 	padding-top: 222px;
@@ -2645,14 +2645,14 @@ ul.mega-menu {
 		text-decoration: none;
 	}
 		.gla_black_txt .gla_scroll_down b {
-			border:2px solid #fff;
+			border:2px solid black;
 		}
 		.gla_black_txt .gla_scroll_down,
 		.gla_black_txt .gla_scroll_down:hover {
-			color: #fff;
+			color: black;
 		}
 			.gla_black_txt .gla_scroll_down b:before {
-				background: #fff;
+				background: black;
 			}
 		.gla_scroll_down:hover {
 			color: #333;
@@ -5778,7 +5778,31 @@ footer {
 	.gla_middle_titles h2 {
 		font-size: 30px;
 		line-height: 30px;
+		font:900 30px/30px Dosis, Arial;
+		margin-bottom: 25px;
 	}
+	h2.font3.couple-title {
+		font-size: 3rem;
+		padding-right:25px;
+		margin-top:25px;
+	}
+	.mobile-mouse {
+		margin-bottom:25%;
+	}
+	.mobile-height {
+		height:90%;
+	}
+	.firstbg {
+		background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg);
+		background-position: 50%;
+		padding-top: 0;
+		height: 75%;
+		width: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+
 	.gla_middle_titles h2 span {
 		font-size: 30px;
 		line-height: 30px;
@@ -6084,10 +6108,12 @@ header nav.gla_transp_nav {
 	bottom: 20px;
 }
 
-.gla_middle_titles h2 {
-	font:900 30px/30px Dosis, Arial;
-	margin-bottom: 5px;
-}
+	.gla_middle_titles h2 {
+		font-size: 30px;
+		line-height: 30px;
+		font:900 30px/30px Dosis, Arial;
+		margin-bottom: 25px;
+	}
 .gla_icon_boxes {
 	margin-right: 0;
 	margin-left: 0;
@@ -6360,6 +6386,10 @@ header nav.active .gla_logo {
 
 	.gla_top_menu > li > a {
 		padding: 13px 16px;
+	}
+	.gla_middle_menu h2 {
+		font:900 30px/30px Dosis, Arial;
+		margin-bottom: 25px;
 	}
 }
 
