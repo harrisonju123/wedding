@@ -8,6 +8,46 @@
 	src:url("OCRAEXT.TTF");
 }
 
+@font-face {
+	font-family: koreanFont2;
+	src: url("HancomSans-Light_0.ttf");
+}
+
+@font-face {
+	font-family: koreanFont3;
+	src: url("HancomUljuCheonjeonriPetroglyph.ttf");
+}
+
+.font4 {
+	font-family: koreanFont2, sans-serif;
+}
+
+.font5 {
+	font-family: koreanFont3, sans-serif
+}
+
+.pictures {
+	margin-bottom:25px;
+}
+
+.story-logo {
+	font-size:6rem;
+	color:#001862;
+	font-family:ocra;
+}
+h2.font3.story-logo {
+	font-size: 6rem;
+	color:#001862;
+	font-family:ocra;
+}
+
+.container.text-center h2.story-logo{
+	font-size: 6rem;
+	color:#001862;
+	margin:1rem;
+	font-family:ocra;
+}
+
 .home-logo {
 	text-align: center;
 }
@@ -18,6 +58,11 @@
 
 .map {
 	margin-top:20px;
+}
+
+.mapframe {
+	width: 50%;
+	height: 25%;
 }
 .firstbg {
 	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg");
@@ -44,6 +89,38 @@
 	font-family: koreanFont, sans-serif;
 	font-size:15px;
 	margin-bottom:5px;
+}
+
+.font6.gla_black_txt a {
+	color: black;
+}
+
+.phone {
+	color: black;
+	font-style:normal;
+	font-size: 10px;
+}
+
+.font6 {
+	font-family: koreanFont2, sans-serif;
+	font-style: normal;
+	font-size:15px;
+	margin-bottom:0px;
+	color: black;
+}
+
+.font7 {
+	font-family: koreanFont3, sans-serif;
+	font-size:15px;
+	margin-bottom:0px;
+}
+
+.kakao {
+	background: url('../img/kakaotalk-icon.png');
+	height: 20px;
+	width: 20px;
+	display: block;
+	/* Other styles here */
 }
 
 .font4 {
@@ -262,13 +339,14 @@ html {
 		max-width: 100% ;
 	}
 	.gla_black_txt .gla_icon_box_content {
-		color: #fff;
+		color: black;
 	}
 	.gla_black_txt .gla_icon_box h4 {
-		color: #fff;
+		color: black;
 	}
 	.gla_black_txt a, .gla_black_txt a i {
-		color: #fff;
+		color: black;
+		text-decoration: underline;
 	}
 
 /*Borders*/
@@ -1370,6 +1448,7 @@ label.error{
 .gla_section {
 	overflow: hidden;
 	position: relative;
+	height: 100vh;
 }
 .gla_section .container {
 	padding-top: 5px;
@@ -1535,7 +1614,6 @@ header {
 	}
 	.gla_parent > a:after {
 		display: inline-block;
-		content: "\e64b";
 		font-family: themify;
 		font-size: 12px;
 		margin-left: 10px;
