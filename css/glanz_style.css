@@ -39,6 +39,7 @@ h2.font3.story-logo {
 	font-size: 6rem;
 	color:#001862;
 	font-family:ocra;
+	margin-bottom: 2rem;
 }
 
 .container.text-center h2.story-logo{
@@ -46,6 +47,24 @@ h2.font3.story-logo {
 	color:#001862;
 	margin:1rem;
 	font-family:ocra;
+}
+
+@media (max-width:500px) {
+	.container.text-center h2.story-logo {
+		font-size:4rem;
+	}
+}
+
+@media(max-width: 500px) {
+	.countdown-amount {
+		font: 200 20px/30px Playfair Display, Dosis, Arial;
+		display: block;
+	}
+
+	.countdown-row {
+		width:100%;
+		margin:0 0 0 0;
+	}
 }
 
 .home-logo {
@@ -85,6 +104,17 @@ h2.font3.story-logo {
 	background-repeat:no-repeat;
 }
 
+@media (max-width:450px) {
+	.thirdbg {
+		background-position: 0px 325px;
+		bottom: -50px;
+		width:100%;
+		background-size: 115% 50%;
+		background-repeat: no-repeat;
+	}
+
+}
+
 .font3 {
 	font-family: koreanFont, sans-serif;
 	font-size:15px;
@@ -93,6 +123,15 @@ h2.font3.story-logo {
 
 .font6.gla_black_txt a {
 	color: black;
+}
+
+@media (max-width: 500px) {
+	.mobile-footer {
+		margin-top:2rem;
+	}
+	.container .text-center p .font6{
+		font-size:13px;
+	}
 }
 
 .phone {
@@ -2869,7 +2908,7 @@ ul.mega-menu {
 	display: none;
 }
 	.gla_countdown_gold .countdown-section {
-		min-width: 185px;
+		min-width: 125px;
 	}
 	.countdown-amount .gla_image0 {
 		width: 82px;
@@ -3616,13 +3655,13 @@ video#video_background  {
 /*Countdown*/
 .countdown-section {
 	display: inline-block;
-	margin: 0 30px 0 0;
+	margin: 0 20px 0 0;
 }
 .text-center .countdown-section {
-	margin: 0 30px;
+	margin: 0 20px;
 }
 .countdown-amount {
-	font: 400 60px/80px Playfair Display, Dosis, Arial;
+	font: 400 30px/40px Playfair Display, Dosis, Arial;
 	display: block;
 }
 .gla_countdown_gold .countdown-amount {
