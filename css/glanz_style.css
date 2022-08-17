@@ -2722,6 +2722,21 @@ ul.mega-menu {
 		text-align: center;
 		z-index: 2;
 	}
+
+	@media(max-width:450px) {
+		.gla_scroll_down {
+			position: absolute;
+			bottom: 60px;
+			text-decoration: none;
+			font:italic 400 14px/18px Playfair Display, Arial;
+			color: #333;
+			width: 40px;
+			left: 50%;
+			margin-left: -20px;
+			text-align: center;
+			z-index: 2;
+		}
+	}
 	.gla_scroll_down:focus, .gla_scroll_down:active {
 		text-decoration: none;
 	}
