@@ -25,12 +25,47 @@
 
     <!-- Other Fonts -->
     <link href="fonts/marsha/stylesheet.css" rel="stylesheet">
+    <script>
+        var mcni = '0';
+        var mcni_func = '0';
+        var mask_release_allow = true
+        if (mcni_func == '2') mask_release_allow = false
 
+    </script>
 </head>
 
 
 <!-- Body -->
 <body class="gla_middle_titles">
+<!-- 계좌 팝업 -->
+<div id="bank_popup" class="mask_over" style="display: none;">
+
+    <div id="bank_pop_title" style="color: rgb(138, 165, 214);">계좌번호</div>
+
+    <div id="bank_pop_notice">
+        복사 버튼 클릭 시, 복사됩니다.
+    </div>
+
+    <div id="bank_pop_txts">
+
+        <ul class="bank_family_group_block bank_family_group_block_undefined">
+            <li id="bank_pop_txt_acc">기업은행 30809456501010</li>
+        </ul>
+
+    </div>
+
+    <div id="bank_pop_btns" class="mcard_button2_row">
+        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
+            복사
+        </div>
+        <div class="mcard_button2" id="bank_pop_close_btn">
+            닫기
+        </div>
+    </div>
+
+
+</div>
+<div id="mask" style="position: fixed; z-index: 3; left: 0; top: 0; background-color: #000000; cursor: pointer; display: none; width: 100%; height: 100%;"></div>
 
 
 <!-- Page -->
@@ -52,73 +87,73 @@
 
     <header>
 
-        <nav class="gla_light_nav gla_transp_nav hideNav" id="navigation">
+<!--        <nav class="gla_light_nav gla_transp_nav hideNav" id="navigation">-->
 
-            <div class="container">
+<!--            <div class="container">-->
 
-                <!-- Menu -->
-                <div class="gla_main_menu gla_main_menu_mobile">
+<!--                &lt;!&ndash; Menu &ndash;&gt;-->
+<!--                <div class="gla_main_menu gla_main_menu_mobile">-->
 
-                    <div class="gla_main_menu_icon">
-                        <i></i><i></i><i></i><i></i>
-                        <b>Menu</b>
-                        <b class="gla_main_menu_icon_b">Back</b>
-                    </div>
-                </div>
+<!--                    <div class="gla_main_menu_icon">-->
+<!--                        <i></i><i></i><i></i><i></i>-->
+<!--                        <b>Menu</b>-->
+<!--                        <b class="gla_main_menu_icon_b">Back</b>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <!-- Menu Content -->
-                <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="img/wedding/lauren_affonso/14400933225_3b844816c3_k.jpg">
-                    <!-- Over -->
-                    <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
-                </div>
+<!--                &lt;!&ndash; Menu Content &ndash;&gt;-->
+<!--                <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="img/wedding/lauren_affonso/14400933225_3b844816c3_k.jpg">-->
+<!--                    &lt;!&ndash; Over &ndash;&gt;-->
+<!--                    <div class="gla_over" data-color="#000" data-opacity="0.7"></div>-->
+<!--                </div>-->
 
-                <div class="gla_main_menu_content_menu gla_black_txt text-right">
-                    <div class="container">
-                        <ul>
-                            <li class="gla_parent"><a href="#">Home</a>
-                            </li>
+<!--                <div class="gla_main_menu_content_menu gla_black_txt text-right">-->
+<!--                    <div class="container">-->
+<!--                        <ul>-->
+<!--                            <li class="gla_parent"><a href="#">Home</a>-->
+<!--                            </li>-->
 
-                            <li class="gla_parent"><a href="#about">About Us</a>
-                            </li>
+<!--                            <li class="gla_parent"><a href="#about">About Us</a>-->
+<!--                            </li>-->
 
-                            <li class="gla_parent"><a href="#story">Our Story</a>
-                            </li>
+<!--                            <li class="gla_parent"><a href="#story">Our Story</a>-->
+<!--                            </li>-->
 
-                            <li class="gla_parent"><a href="#where">When & Where</a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                    <!-- container end -->
-                </div>
-                <!-- menu content end -->
-                <!-- Search Block End -->
-
-                <!-- Top Menu -->
-                <div class="gla_default_menu">
-                    <ul>
-                        <li class="gla_parent"><a href="#">Home</a>
-                        </li>
-
-                        <li class="gla_parent"><a href="#about">About Us</a>
-                        </li>
-
-                        <li class="gla_parent"><a href="#story">Our Story</a>
-                        </li>
-
-                        <li class="gla_parent"><a href="#where">When & Where</a>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Top Menu End -->
+<!--                            <li class="gla_parent"><a href="#where">When & Where</a>-->
+<!--                            </li>-->
 
 
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; container end &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; menu content end &ndash;&gt;-->
+<!--                &lt;!&ndash; Search Block End &ndash;&gt;-->
 
-            </div>
-            <!-- container end -->
-        </nav>
+<!--                &lt;!&ndash; Top Menu &ndash;&gt;-->
+<!--                <div class="gla_default_menu">-->
+<!--                    <ul>-->
+<!--                        <li class="gla_parent"><a href="#">Home</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="gla_parent"><a href="#about">About Us</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="gla_parent"><a href="#story">Our Story</a>-->
+<!--                        </li>-->
+
+<!--                        <li class="gla_parent"><a href="#where">When & Where</a>-->
+<!--                        </li>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; Top Menu End &ndash;&gt;-->
+
+
+
+<!--            </div>-->
+<!--            &lt;!&ndash; container end &ndash;&gt;-->
+<!--        </nav>-->
 
     </header>
     <!-- Header End -->
@@ -168,36 +203,34 @@
 
 
         <!-- section -->
-        <section id="about" class="gla_section gla_image_bck" data-color="#f6f1eb" style="padding-bottom:0;">
+        <section id="about" class="gla_section gla_image_bck contact_info" data-color="#FFFCF7" style="padding-bottom:0;">
 
 
 
             <div class="container text-center">
                     <div class="family-logo">
-                        <div class="thirdbg">
                             <div class="row">
                                 <div class="column">
                                     <h3 class="font6 harrison-korean">주형률</h3>
-                                    <p class="font6 harrison-english">Harrison Ju</p>
+                                    <p class="font8 harrison-english">Harrison Ju</p>
                                     <h3 class="font6 harrison-dad">父 주창환</h3>
-                                    <p class="font6 harrison-dad-english">Chang Ju</p>
+                                    <p class="font8 harrison-dad-english">Chang Ju</p>
                                     <a href="tel:15865309038"><i class="ti ti-mobile phone">+1(586)-530-9038</i></a>
                                     <h3 class="font6 harrison-dad">母 이정진</h3>
-                                    <p class="font6 harrison-dad-english">Jane Ju</p>
+                                    <p class="font8 harrison-dad-english">Jane Ju</p>
                                     <a href="tel:12482073778"><i class="ti ti-mobile phone">+1(248)-207-3778</i></a>
                                 </div>
                                 <div class="column">
                                     <h3 class="font6 harrison-korean">최혜원</h3>
-                                    <p class="font6 harrison-english">Grace Choe</p>
+                                    <p class="font8 harrison-english">Grace Choe</p>
                                     <h3 class="font6 harrison-dad">父 최종국</h3>
-                                    <p class="font6 harrison-dad-english">Jong Gook Choe</p>
+                                    <p class="font8 harrison-dad-english">Jong Gook Choe</p>
                                     <a href="tel:12482073778"><i class="ti ti-mobile phone">(010)-2426-2474</i></a>
                                     <h3 class="font6 harrison-dad">母 박순란</h3>
-                                    <p class="font6 harrison-dad-english">Soon Lan Park</p>
+                                    <p class="font8 harrison-dad-english">Soon Lan Park</p>
                                     <a href="tel:12482073778"><i class="ti ti-mobile phone">(010)-1111-1111</i></a>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             <!-- container end -->
@@ -206,7 +239,7 @@
         <!-- section end -->
 
         <!-- section -->
-        <section id="story" class="gla_section gla_image_bck gla_black_txt gla_fixed" data-stellar-background-ratio="0.8">
+        <section id="story" class="gla_section gla_image_bck gla_black_txt gla_fixed" data-stellar-background-ratio="0.8" style="height:85vh;">
 
             <!-- Over -->
             <div class="gla_over" data-color="#f6f1eb"></div>
@@ -214,8 +247,12 @@
             <div class="container text-center">
 
 
-                <h2 class="story-logo">Our Story</h2>
-                
+                <h2 class="story-logo">OUR STORY</h2>
+                <p class="font6">
+                    2018년 10월 하나님을 더 알고싶어서 나갔던 기도모임에서 처음 만났습니다. 교제전에 새벽기도를 다니며 기도하는 그의 모습에 반해 그해 12월 만남을 시작했고 4년이 지난 2022년 10월 한곳을 바라보며 아름다운 가정을 이루려고 합니다.
+                </p>
+                &nbsp
+
 
                 <!-- icon boxes -->
                 <div class="gla_icon_boxes gla_partners row pictures">
@@ -305,27 +342,89 @@
 
 
         <!-- section -->
-        <section id="where" class="gla_section gla_image_bck gla_fixed gla_black_txt" data-stellar-background-ratio="0.8" style="background-color:rgb(255, 192, 59); height:65vh;">
+        <section id="where" class="gla_section gla_image_bck gla_fixed gla_black_txt" data-stellar-background-ratio="0.8" style="background-color:#FFFCF7; height:100vh;">
 
             <!-- Over -->
             <div class="gla_over" data-color="darksalmon..lllo" data-opacity="0.4"></div>
 
             <div class="container text-center">
 <!--                <p><img src="img/animations/savethedate_wh.gif" data-bottom-top="@src:img/animations/savethedate_wh.gif" height="150" alt=""></p>-->
-                <h2 class="story-logo mobile-footer">Dress Garden</h2>
+                <h2 class="story-logo mobile-footer location-header">LOCATION</h2>
+                <p class="font6" style="text-decoration:underline;">드레스가든</p>
                 <p class="font6">서울특별시 강남구 청담동 영동대로 707</p>
                 <p class="font6">2022년 10월 10일 월요일 오후 4:30</p>
-                <div class="gla_countdown" data-year="2022" data-month="10" data-day="10"></div>
-                <!-- iframe -->
+                <a href="tel:02-512-1000">
+                    <div class="tel_ask_btn">
+                        전화문의
+                    </div>
+                </a>
                 <div class="iframe-wrapper map">
                     <iframe class="mapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4600157095897!2d127.05369211548775!3d37.52065207980646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca465e0734fd5%3A0x49453afaab972502!2z65Oc66CI7Iqk6rCA65Og!5e0!3m2!1sen!2sus!4v1658707286502!5m2!1sen!2sus"
                             height="280" style="border:0;"></iframe>
+                </div>
+                <div id="map_text">
+                    <div class="map_text_row">
+                        <div style="font-size:15px;">
+                            자가용                    </div>
+                        <div style="font-size:12px;">
+                            주소검색: 서울시 강남구 청담동 71-8
+                        </div>
+                    </div>
+                    <div class="map_text_row">
+                        <div style="font-size:15px;">
+                            지하철                    </div>
+                        <div style="font-size:12px;">
+                            7호선 청담역 13번 출구 정면
+                        </div>
+                    </div>
+                    <div class="map_text_row">
+                        <div style="font-size:15px;">
+                            버스                    </div>
+                        <div style="font-size:12px;">
+                            청담역, 경기고교, 청담삼익아파트, 우리은행 청담지점 하차             </div>
+                    </div>
+                    <p style="font-size:10.8px;">
+                        주차안내 : 주차가 혼란할 수 있으니 대중교통 이용 바랍니다.
+                        <br/>
+                        ※ SUV, 대형세단은 주차가 어려울 수 있으니 대중교통 이용을 권장드립니다.
+                    </p>
                 </div>
             </div>
             <!-- container end -->
 
         </section>
+        <div style="height:5vh;"></div>
         <!-- section end -->
+        <section id="money" class="gla_section gla_image_bck gla_fixed gla_black_txt" data-stellar-background-ratio="0.8" style="background-color:#FFFCF7; height:45vh;">
+            <div class="section" data-section="bank">
+                <ul class="bank_title section_title">
+                    <li class="section_title_img">
+                    </li>
+                    <li>
+                        축하의 마음 전하기    </li>
+                </ul>
+
+                <div class="section_desc">
+                    축하의 마음을 담아 축의금을 전달해 보세요. <br>복사 버튼을 클릭해 계좌번호를 복사할 수 있습니다</div>
+
+
+                <div class="bank_family_group_block family_group_tbl bank_family_group_block_undefined" data-type="a" data-side="a">
+
+
+                    <ul class="family_members family_member_a family_member_a1" data-side="a">
+                        <li class="name_block name_a1">
+                            계좌번호            </li>
+                        <li class="bank_txt_view_btn" data-family_group_type="a" data-bank_name="신한은행" data-bank_num="110456247057">
+                            <span>보기</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </section>
 
     </section>
     <!-- Content End -->
@@ -345,6 +444,8 @@
 
 <!-- Theme JS -->
 <script src="js/glanz_script.js"></script>
+<!-- random stuff -->
+<script src="js/mobile-stuff.js"></script>
 
 
 </body>

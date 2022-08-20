@@ -603,6 +603,110 @@
 
 
 
+    var family_group_name_prefix = new Array()
+    family_group_name_prefix['a'] = '신랑'
+    family_group_name_prefix['b'] = '신부'
+
+    var family_group_name_color = new Array()
+    family_group_name_color['a'] = '#8aa5d6'
+    family_group_name_color['b'] = '#ee8196'
+
+    $('.bank_popup').on('show', function() {
+        debugger
+        $(this).css("z-index", parseInt($('.modal-backdrop').css('z-index')) + 1);
+    });
+
+
+    function textarea_resize(obj) {
+
+        // count
+        var text = $(obj).val()
+        var lines = text.split(/\r|\r\n|\n/)
+        var count = lines.length
+
+
+        // resize
+        var default_count = Number($(obj).attr('alt'))
+        if (!default_count) default_count = 1
+
+        if (count > 1) $(obj).css('height', 'auto')
+        if (count > default_count) $(obj).attr('rows', count)
+        else $(obj).attr('rows', default_count)
+
+    }
+
+
+    function basename(path) {
+        return path.split('/').reverse()[0];
+    }
+
+
+    function clipboard_copy(str) {
+        var tmpTextarea = document.createElement('textarea')
+        tmpTextarea.value = str
+        document.body.appendChild(tmpTextarea)
+        tmpTextarea.select()
+        tmpTextarea.setSelectionRange(0, 9999)
+        document.execCommand('copy')
+        document.body.removeChild(tmpTextarea)
+    }
+
+    $('.bank_txt_view_btn').on('click', function() {
+        $('#bank_pop_txt_unm').text($(this).prev().text())
+
+        $('#bank_pop_txt_acc').text($(this).data('bank_name') + ' ' + $(this).attr('data-bank_num'))
+
+        $('#bank_popup').show()
+        mask(0.4)
+
+        function mask(opacity) {
+
+            if (opacity == 0) {
+
+                $('#mask').hide()
+                $('.mask_over').hide()
+
+            } else {
+
+                //$('#mask').css({ 'width': $(window).width(), 'height': $(window).height() })
+                $('#mask').stop().fadeTo('slow', opacity); //$('#mask').fadeIn(1000)
+                $('#mask').show()
+
+            }
+
+        }
+    })
+
+    // 마스크영역 클릭시 끄기 트리거
+    $('#mask').bind('click', function() {
+        if (mask_release_allow == true && $(this).css('opacity') > 0.1) {
+            if ($('#mcni_wrapper').css('display') != 'none') {
+                $('body').css('height', $(document).height() + 'px')
+            }
+            mask(0)
+        }
+    })
+
+
+
+    // 복사
+    $('#bank_pop_copy_btn').on('click', function() {
+        var bank_txt = $('#bank_pop_txt_acc').text().replace(/-/g,'')
+
+        if (bank_txt.length > 1) {
+            clipboard_copy(bank_txt)
+            alert(bank_txt + ' 복사되었습니다')
+        }
+    })
+
+
+    // 닫기
+    $('#bank_pop_close_btn').on('click', function() {
+        $('#bank_popup').hide()
+        mask(0)
+    })
+
+
 
 
     $(window).load(function(){

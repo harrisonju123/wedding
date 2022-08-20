@@ -18,12 +18,150 @@
 	src: url("HancomUljuCheonjeonriPetroglyph.ttf");
 }
 
+@font-face {
+	font-family: koreanFontMobile;
+	src: url("SeoulHangangJungL.woff2");
+}
+
+.bank_title {
+	font-family: koreanFontMobile, sans-serif;
+	padding-bottom: 15px;
+}
+
+.section_header {
+	font-size: 12px;
+}
+.section_title {
+	font-size: 20px;
+}
+
+.section_desc {
+	color: #333333;
+	font-size: 13px;
+	font-family: koreanFontMobile, sans-serif;
+	font-weight: 300;
+	line-height: 22px;
+	margin-bottom: 46px;
+	text-align: center;
+}
+#bank_popup .bank_family_group_block {
+	margin-bottom: -20px;
+}
+.bank_family_group_block {
+	border: 1px solid #82828a;
+	margin-bottom: 15px;
+}
+.bank_family_group_block > li {
+	height: 43px;
+	border-bottom: 1px solid #82828a;
+	font-size: 14px;
+	letter-spacing:1px;
+	line-height: 43px;
+	padding-left: 15px;
+}
+.mcard_button2_row {
+	height: 36px;
+	margin-top: 50px;
+	line-height: 36px;
+}
+
+#bank_pop_btns > div {
+	height: 42px;
+	line-height: 38px;
+}
+
+.mcard_button2 {
+	background-color: #f5f5f7;
+	color: #7f838c;
+}
+
+.mcard_button2_row {
+	height: 36px;
+	margin-top: 50px;
+	line-height: 36px;
+}
+.mcard_button2 {
+	width: 50%;
+	background-color: #f5f5f7;
+	color: #7f838c;
+	cursor: pointer;
+	float: left;
+	font-size: 16px;
+	text-align: center;
+}
+.mcard_button2_on {
+	background-color: #605ca8;
+	color: #ffffff;
+}
+
+.mcard_button2_on {
+	background-color: #e2d7db;
+	color: #ffffff;
+}
+
+.bank_family_group_block_a {
+	border: 0px solid transparent;
+}
+.bank_family_group_block_b {
+	border: 0px solid transparent;
+}
+
+.bank_family_group_block > li:last-child {
+	border-bottom: 1px solid #80838a;
+}
+ul {
+	font-family: koreanFontMobile, sans-serif;
+	margin-bottom: 0;
+}
+
+.family_members {
+	border-bottom: 1px solid #82828c;
+	height: 42px;
+	border-bottom: 1px solid #80838a;
+	display: flex;
+	font-size: 13px;
+	justify-content: space-between;
+	line-height: 42px;
+	padding-left: 12px;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.name_block, .name_block > span {
+	font-size: 13px;
+}
+
+.bank_txt_view_btn {
+	border-left: 1px solid #82828c;
+}
+
+.section {
+	padding-bottom: 64px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 25px;
+}
+
+
+.bank_txt_view_btn {
+	cursor: pointer;
+	font-size: 15px;
+	border-left: 1px solid #80838a;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.bank_txt_view_btn > span {
+	font-size: 15px;
+}
 .font4 {
-	font-family: koreanFont2, sans-serif;
+	font-family: koreanFontMobile, sans-serif;
 }
 
 .font5 {
-	font-family: koreanFont3, sans-serif
+	font-family: koreanFontMobile, sans-serif
 }
 
 .pictures {
@@ -34,6 +172,13 @@
 	font-size:6rem;
 	color:#001862;
 	font-family:ocra;
+	padding-bottom: 50px;
+	padding-top: 60px;
+}
+
+.location-header {
+	padding-bottom: 50px;
+	padding-top: 60px;
 }
 h2.font3.story-logo {
 	font-size: 6rem;
@@ -49,9 +194,17 @@ h2.font3.story-logo {
 	font-family:ocra;
 }
 
+.bank_family_group_block {
+	border: 1px solid #80838a;
+}
+
+.bank_txt_view_btn {
+	border-left: 1px solid #82828c;
+}
+
 @media (max-width:500px) {
 	.container.text-center h2.story-logo {
-		font-size:4rem;
+		font-size:2.7rem;
 	}
 }
 
@@ -84,7 +237,7 @@ h2.font3.story-logo {
 	height: 25%;
 }
 .firstbg {
-	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg");
+	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
 	background-position: top;
 	padding-top: 0;
 	height: 87%;
@@ -116,8 +269,8 @@ h2.font3.story-logo {
 }
 
 .font3 {
-	font-family: koreanFont, sans-serif;
-	font-size:15px;
+	font-family: koreanFontMobile, sans-serif;
+	font-size:13px;
 	margin-bottom:5px;
 }
 
@@ -141,17 +294,25 @@ h2.font3.story-logo {
 }
 
 .font6 {
-	font-family: koreanFont2, sans-serif;
+	font-family: koreanFontMobile, sans-serif;
 	font-style: normal;
-	font-size:15px;
+	font-size:13px;
 	margin-bottom:0px;
 	color: black;
 }
 
 .font7 {
-	font-family: koreanFont3, sans-serif;
+	font-family: koreanFontMobile, sans-serif;
 	font-size:15px;
 	margin-bottom:0px;
+}
+
+.font8 {
+	font-family: koreanFontMobile, sans-serif;;
+	font-style: normal;
+	font-size: 12px;
+	margin-bottom:0px;
+	color: black;
 }
 
 .kakao {
@@ -163,13 +324,13 @@ h2.font3.story-logo {
 }
 
 .font4 {
-	font-family: koreanFont, sans-serif;
+	font-family: koreanFontMobile, sans-serif;
 	font-size:25px;
 	margin-bottom:5px;
 }
 
 .font5 {
-	font-family: koreanFont, sans-serif;
+	font-family: koreanFontMobile, sans-serif;
 	font-size:20px;
 	margin-bottom:5px;
 }
@@ -325,11 +486,57 @@ body {
 	height: 100vh;
 }
 ol, ul {
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 a, a:hover, a:focus, a:active {
 	color: #6f6f6f
 }
+#bank_popup {
+	background-color: white;
+	opacity:1;
+}
+
+.modal-backdrop {
+	z-index: -1;
+}
+
+#money {
+	font-family: koreanFontMobile, sans-serif;
+}
+
+#bank_pop_title {
+	font-size: 16px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#bank_pop_notice {
+	margin-top: 20px;
+	text-align: center;
+}
+#bank_popup {
+	width: 80%;
+	background-color: white;
+	display: none;
+	font-size: 14px;
+	position: fixed;
+	left: 50%;
+	top: 100px;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+
+#bank_pop_txts {
+	margin-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#bank_popup .bank_family_group_block {
+	margin-bottom: -20px;
+}
+
+
 html {
 	min-height:100%;
 	height:100%
@@ -1488,6 +1695,30 @@ label.error{
 	overflow: hidden;
 	position: relative;
 	height: 100vh;
+}
+
+.section_title > li, .section_desc, name_block, name_a1, bank_txt_view_btn{
+	color: #333333;
+}
+.bank_family_group_block {
+	border: 1px solid #80838a;
+}
+.bank_family_group_block > li {
+	border-bottom: 1px solid #80838a;
+}
+.bank_family_group_block {
+	border: 1px solid #80838a;
+}
+.bank_family_group_block > li {
+	border-bottom: 1px solid #80838a;
+}
+.family_members {
+	border-bottom: 1px solid #82828c;
+}
+
+
+.contact_info {
+	height: 50vh;
 }
 .gla_section .container {
 	padding-top: 5px;
@@ -3594,6 +3825,53 @@ video#video_background  {
 }
 .gla_black_txt .gla_icon_over i  {
 	opacity: 0.1;
+}
+
+/* 전화문의 버튼 */
+
+/* 전화문의 버튼 */
+.tel_ask_btn {
+	display: inline-block;
+	height: 30px;
+	width: 100px;
+	background-image: url('../img/icon_contact_white_tel.png');
+	background-position: 12px center;
+	background-repeat: no-repeat;
+	background-size: auto 15px;
+	border-radius: 15px;
+	border: 1px solid transparent;
+	color: #343d46;
+	font-size:14px;
+	line-height: 31px;
+	margin: auto;
+	margin-top: 10px;
+	padding-left: 22px;
+}
+
+.tel_ask_btn {
+	background-color: #c8b5b9;
+	background-image: url('../img/icon_contact_white_tel.png');
+	background-position: 12px center;
+	background-repeat: no-repeat;
+	background-size: auto 14px;
+	color: #ffffff;
+	border: none;
+}
+
+#map_text {
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 47px;
+	text-align: center;
+	padding-bottom: 0px;
+	padding-left:25px;
+	padding-right: 25px;
+	letter-spacing: -0.5px;
+	font-family: koreanFontMobile, sans-serif;
+}
+
+.map_text_row:not(:last-child) {
+	margin-bottom: 30px;
 }
 
 /*Menu*/
@@ -5924,13 +6202,13 @@ footer {
 		height:105%;
 	}
 	.firstbg {
-		background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg);
+		background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
 		background-position: 50%;
 		padding-top: 0;
 		padding-right:20px;
 		height: 97%;
 		width: 100%;
-		background-size: contain;
+		background-size: 175% 60%;
 		background-repeat: no-repeat;
 		position: absolute;
 	}
