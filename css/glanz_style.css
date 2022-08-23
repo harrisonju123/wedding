@@ -374,14 +374,15 @@ h2.font3.story-logo {
 }
 
 .firstbg {
-	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
-	background-position: top;
-	padding-top: 0;
-	height: 87%;
+	background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
+	background-position: 50px 350px;
+	padding-top: 25px;
+	padding-right: 0px;
+	height: 100%;
 	width: 100%;
-	background-size:contain;
-	background-repeat:no-repeat;
-	position:absolute;
+	background-size: 100% 75%;
+	background-repeat: no-repeat;
+	position: absolute;
 }
 
 .thirdbg {
