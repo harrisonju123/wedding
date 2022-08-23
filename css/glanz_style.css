@@ -6207,12 +6207,12 @@ footer {
 	}
 	.firstbg {
 		background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
-		background-position: 50%;
+		background-position: -130px 134px;
 		padding-top: 0;
 		padding-right:20px;
-		height: 97%;
+		height: 94%;
 		width: 100%;
-		background-size: 175% 60%;
+		background-size: 175% 100%;
 		background-repeat: no-repeat;
 		position: absolute;
 	}
