@@ -240,6 +240,139 @@ h2.font3.story-logo {
 	width: 50%;
 	height: 25%;
 }
+
+/* 청첩장 포토형 신랑 & 신부 연락 */
+.photo .call {
+	background: #f8f9fa;
+}
+#about .call {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+/* 신랑 & 신부 연락 */
+.call {
+	background: rgb(255, 252, 247);
+	padding-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.call dl {
+	width: 100%;
+	padding: 10px 0 10px 0;
+}
+
+.call dl:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.call dl.wife {
+	padding-bottom: 30px;
+}
+
+.info_detail {
+	position: absolute;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url(../img/toggle_icon.png) no-repeat;
+	background-position: center 0;
+	text-indent: -9999999px;
+	right: 50%;
+	transform: translateX(50%);
+	background-size: 100%;
+}
+
+.call dl dt {
+	float: left;
+	margin-top: 4%;
+	width: 56%;
+	padding: 0px;
+	font-size: 20px;
+}
+
+.call dl dt span.blue {
+	font-weight: 400;
+	color: black;
+	margin-right: 5%;
+}
+
+.call dl dt span.pink {
+	font-weight: normal;
+	color: #121329;
+	margin-right: 5%;
+}
+
+.call dl dd {
+	padding: 0px 10px;
+	width: 12%;
+	float: left;
+	margin-top: 3%;
+}
+
+.call .list_wrap {
+	position: relative;
+	margin-top: 20px;
+}
+
+.call .list_wrap:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.call .list_wrap.on .list_con {
+	display: block;
+}
+
+.call .list_wrap.on .info_detail {
+	background-position: center -30px;
+}
+
+.call .list_wrap li {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.call .list_wrap h3 {
+	font-size: 15px;
+	height: 20px;
+	padding-bottom: 8px;
+}
+
+.call .list_wrap .list_con {
+	display: none;
+	margin: 15px 0 10%;
+	padding-bottom: 10px;
+	height: 60px;
+}
+
+.call .list_wrap .btn_wrap {
+	margin-top: 10px;
+}
+
+.call .list_wrap .btn_wrap a {
+	margin: 0 10px;
+}
+
+.call .list_wrap span:nth-child(1) {
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.sound {
+	overflow: hidden;
+	text-indent: -5000px;
+	position: absolute;
+	line-height: 0;
+	font-size: 0;
+	width: 0;
+}
+
 .firstbg {
 	background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
 	background-position: top;
@@ -722,8 +855,7 @@ h2:after {
 		background-size: 100px 9px;
 	}
 h3 {
-	font:italic 400 30px/40px Playfair Display, Arial;
-	margin-bottom: 40px;
+	color: black;
 }
 
 
@@ -1719,10 +1851,16 @@ label.error{
 .family_members {
 	border-bottom: 1px solid #82828c;
 }
-
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
 
 .contact_info {
-	height: 50vh;
+	height: 60vh;
 }
 .gla_section .container {
 	padding-top: 5px;
@@ -6570,7 +6708,6 @@ header nav.gla_transp_nav {
 	margin-left: 20px;
 }
 h3 {
-	font:italic 400 20px/30px Playfair Display, Arial
 }
 .gla_portfolio_footer_grey:after,
 .gla_portfolio_footer_white:after {
