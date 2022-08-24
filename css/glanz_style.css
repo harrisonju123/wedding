@@ -6342,16 +6342,16 @@ footer {
 		margin-top:25px;
 	}
 	.mobile-height {
-		height:105%;
+		height:100%;
 	}
 	.firstbg {
-		background-image: url("https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png");
-		background-position: -130px 411px;
+		background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
+		background-position: -118px 422px;
 		padding-top: 25px;
-		padding-right:0px;
+		padding-right: 0px;
 		height: 100%;
 		width: 100%;
-		background-size: 175% 56%;
+		background-size: 168% 41%;
 		background-repeat: no-repeat;
 		position: absolute;
 	}
