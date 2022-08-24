@@ -23,6 +23,11 @@
 	src: url("SeoulHangangJungL.woff2");
 }
 
+@font-face {
+	font-family: hermesFont;
+	src: url("../fonts/hermes.woff2");
+}
+
 .bank_title {
 	font-family: koreanFontMobile, sans-serif;
 	padding-bottom: 15px;
@@ -54,6 +59,10 @@
 .bank_family_group_block {
 	border: 1px solid #82828a;
 	margin-bottom: 15px;
+}
+
+.newrightfloat {
+	float:right;
 }
 .bank_family_group_block > li {
 	height: 43px;
@@ -174,8 +183,8 @@ ul, li {
 
 .story-logo {
 	font-size:6rem;
-	color:#001862;
-	font-family:ocra;
+	color:#10154B;
+	font-family:hermesFont;
 	padding-bottom: 50px;
 	padding-top: 60px;
 }
@@ -186,16 +195,16 @@ ul, li {
 }
 h2.font3.story-logo {
 	font-size: 6rem;
-	color:#001862;
-	font-family:ocra;
+	color:#10154B;
+	font-family:hermesFont;
 	margin-bottom: 2rem;
 }
 
 .container.text-center h2.story-logo{
 	font-size: 6rem;
-	color:#001862;
+	color:#10154B;
 	margin:1rem;
-	font-family:ocra;
+	font-family:hermesFont;
 }
 
 .bank_family_group_block {
@@ -259,7 +268,7 @@ h2.font3.story-logo {
 
 .call dl {
 	width: 100%;
-	padding: 10px 0 10px 0;
+	padding: 0 0 0 0;
 }
 
 .call dl:after {
@@ -310,7 +319,7 @@ h2.font3.story-logo {
 	padding: 0px 10px;
 	width: 12%;
 	float: left;
-	margin-top: 3%;
+	margin-top: 4%;
 }
 
 .call .list_wrap {
@@ -375,12 +384,12 @@ h2.font3.story-logo {
 
 .firstbg {
 	background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
-	background-position: 50px 350px;
+	background-position: -50px 300px;
 	padding-top: 25px;
 	padding-right: 0px;
 	height: 100%;
 	width: 100%;
-	background-size: 100% 75%;
+	background-size: 133% 50%;
 	background-repeat: no-repeat;
 	position: absolute;
 }
@@ -475,13 +484,13 @@ h2.font3.story-logo {
 
 h2.font3.couple-title {
 	font-size: 4rem;
-	color:#001862;
-	font-family:ocra;
+	color:#10154B;
+	font-family: hermesFont;
 }
 
 .container.text-center h2.couple-title{
 	font-size: 4rem;
-	color:#001862;
+	color:#10154B;
 	margin:1rem;
 	font-family:ocra;
 }
@@ -1861,7 +1870,7 @@ p {
 }
 
 .contact_info {
-	height: 60vh;
+	height: 55vh;
 }
 .gla_section .container {
 	padding-top: 5px;
@@ -6347,12 +6356,12 @@ footer {
 	}
 	.firstbg {
 		background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
-		background-position: -50px 441px;
+		background-position: -16px 440px;
 		padding-top: 25px;
 		padding-right: 0px;
 		height: 100%;
 		width: 100%;
-		background-size: 133% 41%;
+		background-size: 120% 43%;
 		background-repeat: no-repeat;
 		position: absolute;
 	}
@@ -6669,6 +6678,7 @@ header nav.gla_transp_nav {
 		margin-bottom: 25px;
 	}
 .gla_icon_boxes {
+	padding-top: 40px;
 	margin-right: 0;
 	margin-left: 0;
 }
