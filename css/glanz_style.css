@@ -183,11 +183,11 @@ ul, li {
 }
 
 .story-logo {
-	font-size:6rem;
+	font-size:2.7rem;
 	color:#10154B;
 	font-family:hermesFont;
-	padding-bottom: 50px;
-	padding-top: 60px;
+	padding-bottom: 15px;
+	padding-top: 25px;
 }
 
 .location-header {
@@ -204,7 +204,6 @@ h2.font3.story-logo {
 .container.text-center h2.story-logo{
 	font-size: 6rem;
 	color:#10154B;
-	margin:1rem;
 	font-family:hermesFont;
 }
 
@@ -855,8 +854,6 @@ h2 {
 	font:900 80px marsha, Arial;
 }
 .gla_middle_titles h2 {
-	font:400 70px/80px marsha, Dosis;
-	margin-bottom: 5px;
 }
 
 .text-center .gla_middle_titles h2:after  {
@@ -5318,7 +5315,6 @@ video#video_background  {
 	}
 	.gla_service_block h4 {
 		margin: 15px 0 0;
-		font:900 30px/30px Dosis, Arial;
 		text-transform: uppercase;
 	}
 	.gla_service_block .gla_simple_block {
@@ -6404,7 +6400,6 @@ footer {
 	.gla_middle_titles h2 {
 		font-size: 30px;
 		line-height: 30px;
-		font:900 30px/30px Dosis, Arial;
 	}
 	h2.font3.couple-title {
 		font-size: 2.7rem;
@@ -6727,11 +6722,9 @@ header nav.gla_transp_nav {
 	.gla_middle_titles h2 {
 		font-size: 30px;
 		line-height: 30px;
-		font:900 30px/30px Dosis, Arial;
-		margin-bottom: 25px;
 	}
 .gla_icon_boxes {
-	padding-top: 40px;
+	padding-top: 50px;
 	margin-right: 0;
 	margin-left: 0;
 }
@@ -7004,7 +6997,7 @@ header nav.active .gla_logo {
 		padding: 13px 16px;
 	}
 	.gla_middle_menu h2 {
-		font:900 30px/30px Dosis, Arial;
+
 		margin-bottom: 25px;
 	}
 }
