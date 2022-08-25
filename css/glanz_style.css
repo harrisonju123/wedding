@@ -568,7 +568,7 @@ h2.font3.couple-title {
 
 .column {
 	float: left;
-	width: 49%;
+	width: 33%;
 }
 
 /* Clear floats after the columns */
@@ -6407,9 +6407,12 @@ footer {
 		height:100%;
 	}
 	.firstbg {
-		height: 350px;
-		width: 430px;
-		object-fit:cover;
+		/*height: 350px;*/
+		/*width: 430px;*/
+		/*object-fit:cover;*/
+		height: 500px;
+		width: 550px;
+		padding-right: 117px;
 	}
 
 	.gla_middle_titles h2 span {
