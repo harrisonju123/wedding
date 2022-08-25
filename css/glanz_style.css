@@ -35,6 +35,7 @@
 
 .title_color {
 	color: #001862;
+	text-align:center;
 }
 
 .section_header {
@@ -442,14 +443,9 @@ h1 {
 }
 
 .firstbg {
-	background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
-	background-position: 313px 455px;
-	padding-top: 0;
-	height: 87%;
-	width: 100%;
-	background-size: 53% 50%;
-	background-repeat: no-repeat;
-	position: absolute;
+	height: 350px;
+	width: 330px;
+	object-fit:cover;
 }
 
 .thirdbg {
@@ -504,6 +500,7 @@ h1 {
 	font-size:13px;
 	margin-bottom:0px;
 	color: black;
+	text-align: center;
 }
 
 .font7 {
@@ -1928,7 +1925,7 @@ p {
 }
 
 .contact_info {
-	height: 55vh;
+	height: auto;
 }
 .gla_section .container {
 	padding-top: 5px;
@@ -2969,6 +2966,12 @@ ul.mega-menu {
 	width: 40px;
 	bottom: 0px;
 
+}
+
+@media (min-width: 1200px) {
+	.pictures-center {
+		left:50vh;
+	}
 }
 
 
@@ -4561,7 +4564,6 @@ video#video_background  {
 }
 .gla_icon_boxes {
 	margin-top: 80px;
-	margin-bottom: -30px;
 }
 	.gla_simple_block .gla_icon_boxes {
 		margin-top: 0;
@@ -6403,7 +6405,6 @@ footer {
 		font-size: 30px;
 		line-height: 30px;
 		font:900 30px/30px Dosis, Arial;
-		margin-bottom: 25px;
 	}
 	h2.font3.couple-title {
 		font-size: 2.7rem;
@@ -6413,15 +6414,9 @@ footer {
 		height:100%;
 	}
 	.firstbg {
-		background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
-		background-position: -16px 440px;
-		padding-top: 25px;
-		padding-right: 0px;
-		height: 100%;
-		width: 100%;
-		background-size: 120% 43%;
-		background-repeat: no-repeat;
-		position: absolute;
+		height: 350px;
+		width: 330px;
+		object-fit:cover;
 	}
 
 	.gla_middle_titles h2 span {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/%E1%84%82%E1%85%A9%E1%84%87%E1%85%B3%E1%86%AF01.jpg" />
-    <title>You're Invited!</title>
+    <title>결혼식을 초대합니다</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/themify-icons/css/themify-icons.css" />
@@ -38,6 +38,38 @@
 
 <!-- Body -->
 <body class="gla_middle_titles">
+<!-- 계좌 팝업 -->
+<div id="bank_popup" class="mask_over" style="display: none;">
+
+    <div id="bank_pop_title" style="color: rgb(138, 165, 214);">계좌번호</div>
+
+    <div id="bank_pop_notice">
+        복사 버튼 클릭 시, 복사됩니다.
+        <li class="name_block name_a1">
+            입금자명: 최정회
+        </li>
+    </div>
+
+    <div id="bank_pop_txts">
+
+        <ul class="bank_family_group_block bank_family_group_block_undefined">
+            <li id="bank_pop_txt_acc">기업은행 30809456501010</li>
+        </ul>
+
+    </div>
+
+    <div id="bank_pop_btns" class="mcard_button2_row">
+        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
+            복사
+        </div>
+        <div class="mcard_button2" id="bank_pop_close_btn">
+            닫기
+        </div>
+    </div>
+
+
+</div>
+<div id="mask" style="position: fixed; z-index: 3; left: 0; top: 0; background-color: #000000; cursor: pointer; display: none; width: 100%; height: 100%;"></div>
 
 
 <!-- Page -->
@@ -72,7 +104,7 @@
                 <!-- home logo -->
                 <div class="home-logo">
                     <div class="firstbg">
-                        <h2 class="font3 couple-title">HYUNGRYOOL X HAEWON</h2>
+                        <h2 class="font3 couple-title">HARRISON X HAEWON</h2>
                         <p class="invitation-text font6">다양한 색들이 반짝이는<br/>
                             아름다운 세상에서 <br />
                             저희 두 사람이 만나 <br/>
@@ -213,7 +245,7 @@
     <!-- section end -->
 
     <!-- section -->
-    <section id="story" class="gla_section gla_image_bck gla_black_txt gla_fixed" data-stellar-background-ratio="0.8" style="height:85vh;">
+    <section id="story" class="gla_section gla_image_bck gla_black_txt gla_fixed" data-stellar-background-ratio="0.8" style="height:auto;">
 
         <!-- Over -->
         <div class="gla_over" data-color="#f6f1eb"></div>
@@ -221,12 +253,12 @@
         <div class="container text-center">
 
 
-            <h2 class="story-logo">OUR PHOTOS</h2>
+            <h2 class="story-logo">OUR STORY</h2>
             <p class="font6" style="font-size:12px;">
-
+                5년전 가을, 기도모임에서 처음 만났습니다.<br/>
+                그리고 우리의 만남에 하나님이 계심에 감사하며<br/>
+                2022년 가을, 하나님의 말씀에 따라 함께 첫 걸음을 내딛으려 합니다.
             </p>
-            &nbsp
-
 
             <!-- icon boxes -->
             <div class="gla_icon_boxes gla_partners row pictures">
@@ -286,15 +318,6 @@
                             height="320" alt=""></a>
                 </div>
 
-                <div id=13 class="gla_partner_box">
-                    <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00777.jpg"><img
-                            src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00777.jpg"                               height="320" alt=""></a>
-                </div>
-                <div id=9 class="gla_partner_box">
-                    <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00809.jpg"><img
-                            src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00809.jpg"
-                            height="320" alt=""></a>
-                </div>
                 <div id="16" class="gla_partner_box">
                     <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00982.jpg"><img
                             src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00982.jpg"                               height="320" alt=""></a>
@@ -373,7 +396,57 @@
     </section>
     <div style="height:5vh;"></div>
     <!-- section end -->
+    <section id="money" class="gla_section gla_image_bck gla_fixed gla_black_txt" data-stellar-background-ratio="0.8" style="background-color:#FFFCF7; height:auto;">
+        <div class="section" data-section="bank">
+            <ul class="bank_title section_title">
+                <li class="section_title_img">
+                </li>
+                <li style="color:#10154B; font-size:2.7rem; font-family: hermesFont; padding-top:50px; padding-bottom:60px;" class="title_color">
+                    REGISTRY    </li>
+            </ul>
 
+            <div class="section_desc">
+                축하의 마음을 담아 축의금을 전달해 보세요. <br>복사 버튼을 클릭해 계좌번호를 복사할 수 있습니다</div>
+
+
+            <div class="bank_family_group_block family_group_tbl bank_family_group_block_undefined" data-type="a" data-side="a">
+
+
+                <ul class="family_members family_member_a family_member_a1" data-side="a">
+                    <li class="name_block name_a1">
+                        계좌번호            </li>
+                    <li class="bank_txt_view_btn" data-family_group_type="a" data-bank_name="우리은행" data-bank_num="1005380970205">
+                        <span>보기</span>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <section id="thankyou" class="gla_section gla_image_bck gla_fixed gla_black_txt" data-stellar-background-ratio="0.8" style="height:auto;">
+        <div>
+            <h2 style="color:#10154B; font-size:2.7rem; font-family: hermesFont; padding-top:50px; padding-bottom:60px;" class="title_color">THANK YOU</h2>
+            <p class="font6" style="font-size:12px;">
+                주님주신 행복 늘 감사하며 살겠습니다.<br/>
+                설레고 감사한 순간에 함께해 주셔서 감사합니다. </p>
+        </div>
+        <div class="gla_icon_boxes gla_partners row pictures">
+            <div id=13 class="gla_partner_box">
+                <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00777.jpg"><img
+                        src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00777.jpg"                               height="320" alt=""></a>
+            </div>
+            <div id=9 class="gla_partner_box">
+                <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00809.jpg"><img
+                        src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00809.jpg"
+                        height="320" alt=""></a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Content End -->
 
 
 
