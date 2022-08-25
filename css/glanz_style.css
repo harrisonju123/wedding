@@ -153,10 +153,14 @@ ul, li {
 }
 
 .section {
-	padding-bottom: 64px;
+	padding-bottom: 40px;
 	padding-left: 35px;
 	padding-right: 35px;
 	padding-top: 25px;
+}
+#thankyou {
+	padding-top:25px;
+	padding-bottom:25px;
 }
 
 
@@ -190,10 +194,7 @@ ul, li {
 	padding-top: 25px;
 }
 
-.location-header {
-	padding-bottom: 50px;
-	padding-top: 60px;
-}
+
 h2.font3.story-logo {
 	font-size: 6rem;
 	color:#10154B;
@@ -443,7 +444,7 @@ h1 {
 
 .firstbg {
 	height: 350px;
-	width: 330px;
+	width: 430px;
 	object-fit:cover;
 }
 
@@ -479,9 +480,6 @@ h1 {
 }
 
 @media (max-width: 500px) {
-	.mobile-footer {
-		margin-top:2rem;
-	}
 	.container .text-center p .font6{
 		font-size:13px;
 	}
@@ -6410,7 +6408,7 @@ footer {
 	}
 	.firstbg {
 		height: 350px;
-		width: 330px;
+		width: 430px;
 		object-fit:cover;
 	}
 
@@ -6657,7 +6655,7 @@ footer {
 	}
 
 .gla_section .container {
-	padding-top: 5px;
+	padding-top: 46px;
 	padding-bottom: 46px;
 }
 
