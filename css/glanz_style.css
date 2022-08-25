@@ -382,6 +382,65 @@ h2.font3.story-logo {
 	width: 0;
 }
 
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #222222;
+	z-index: 1000;
+}
+#content {
+	margin: 0 auto;
+	padding-bottom: 50px;
+	width: 80%;
+	max-width: 978px;
+}
+
+
+
+/* Loaded */
+.loaded #loader-wrapper {
+	-webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+	-ms-transform: translateX(-100%);  /* IE 9 */
+	transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper {
+	-webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+	-ms-transform: translateX(100%);  /* IE 9 */
+	transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader {
+	opacity: 0;
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+}
+
+.loaded #loader {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+
+	-webkit-transition: all 0.3s 0.3s ease-out;
+	transition: all 0.3s 0.3s ease-out;
+}
+
+
+#loader {
+	z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+h1 {
+	color: #EEEEEE;
+}
+
 .firstbg {
 	background-image: url(https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png);
 	background-position: 313px 455px;
