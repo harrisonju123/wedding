@@ -6332,7 +6332,7 @@ footer {
 	}
 }
 
-@media(min-width:700px) {
+@media(min-width:700px) and (max-width:1000px) {
 	.firstbg {
 		height: 560px;
 		width: 1000px;
