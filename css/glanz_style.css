@@ -188,6 +188,12 @@ ul, li {
 	margin-right:0px;
 }
 
+.font7 {
+	font-family: koreanFontMobile;
+	font-size: 0.5rem;
+
+}
+
 .story-logo {
 	font-size:6rem;
 	color:#10154B;
@@ -514,8 +520,12 @@ h1 {
 
 .font7 {
 	font-family: koreanFontMobile, sans-serif;
-	font-size:15px;
+	font-size:10px;
 	margin-bottom:0px;
+}
+
+.text-center p {
+	margin-top: 0px;
 }
 
 .font8 {
@@ -1208,6 +1218,10 @@ blockquote footer {
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.text-center p .font7 {
+	margin-top: 0px;
 }
 .form-control {
 	margin-bottom: 20px;
