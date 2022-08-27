@@ -184,15 +184,27 @@ ul, li {
 
 .pictures {
 	margin-bottom:25px;
+	margin-left:0px;
+	margin-right:0px;
 }
 
 .story-logo {
-	font-size:2.7rem;
+	font-size:6rem;
 	color:#10154B;
 	font-family:hermesFont;
 	padding-bottom: 15px;
 	padding-top: 25px;
 }
+@media (max-width: 1000px){
+	.story-logo {
+		font-size:2.7rem;
+		color:#10154B;
+		font-family:hermesFont;
+		padding-bottom: 15px;
+		padding-top: 25px;
+	}
+}
+
 
 
 h2.font3.story-logo {
@@ -535,7 +547,7 @@ h1 {
 }
 
 h2.font3.couple-title {
-	font-size: 4rem;
+	font-size: 6rem;
 	color:#10154B;
 	font-family: hermesFont;
 }
@@ -1894,7 +1906,7 @@ label.error{
 }
 
 .section_title > li, .section_desc, name_block, name_a1, bank_txt_view_btn{
-	color: #333333;
+
 }
 .bank_family_group_block {
 	border: 1px solid #80838a;
@@ -2964,9 +2976,9 @@ ul.mega-menu {
 }
 
 @media (min-width: 1200px) {
-	.pictures-center {
-		left:50vh;
-	}
+	/*.pictures-center {*/
+	/*	left:50vh;*/
+	/*}*/
 }
 
 
@@ -6420,7 +6432,7 @@ footer {
     bottom: 6px;
 	}
 	.gla_middle_titles h2 {
-		font-size: 30px;
+		font-size: 2.7rem;
 		line-height: 30px;
 	}
 	h2.font3.couple-title {
