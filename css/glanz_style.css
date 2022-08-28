@@ -459,6 +459,9 @@ h2.font3.story-logo {
 h1 {
 	color: #EEEEEE;
 }
+.bold-title-text {
+	font-weight:bold;
+}
 
 .firstbg {
 	height: 350px;
