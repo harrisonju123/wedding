@@ -1,6 +1,9 @@
 (function($) {
     "use strict"; // Start of use strict
-
+    var iframeElement   = document.querySelector('#music');
+    var iframeElementID = iframeElement.id;
+    var widget1         = SC.Widget(iframeElement);
+    widget1.play();
 
     const nav = document.querySelector('#navigation');
 

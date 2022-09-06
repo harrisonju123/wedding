@@ -139,11 +139,6 @@ $(".wait").hide();
 $('.form-send input').on('click', function() {
 	$(this).attr("value", "Sending...");
 });
-
-var iframeElement   = document.querySelector('#music');
-var iframeElementID = iframeElement.id;
-var widget1         = SC.Widget(iframeElement);
-widget1.play();
 $("#contactForm").validate({
   invalidHandler: function(event, validator) {
       $('.form-send input').attr("value", "Send");
