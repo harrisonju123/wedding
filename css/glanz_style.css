@@ -3327,7 +3327,7 @@ ul.mega-menu {
 	position: fixed;
 	width: 400px;
 	height: 300px;
-	z-index: 9999;
+	z-index: 2;
 	bottom: 40px;
 	right: 90px;
 	display: none;
