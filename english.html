@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/%E1%84%82%E1%85%A9%E1%84%87%E1%85%B3%E1%86%AF01.jpg" />
+    <meta property="og:image" content="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%BC%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AE%E1%86%B71024_1.jpg" />
     <title>You're Invited!</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -14,6 +14,7 @@
 
     <!-- Library CSS -->
     <link href="css/glanz_library.css" rel="stylesheet">
+    <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
 
     <!-- Icons CSS -->
     <link href="fonts/themify-icons.css" rel="stylesheet">
@@ -39,38 +40,13 @@
 <!-- Body -->
 <body class="gla_middle_titles">
 <!-- 계좌 팝업 -->
-<div id="bank_popup" class="mask_over" style="display: none;">
-
-    <div id="bank_pop_title" style="color: rgb(138, 165, 214);">계좌번호</div>
-
-    <div id="bank_pop_notice">
-        복사 버튼 클릭 시, 복사됩니다.
-        <li class="name_block name_a1">
-            입금자명: 최정회
-        </li>
-    </div>
-
-    <div id="bank_pop_txts">
-
-        <ul class="bank_family_group_block bank_family_group_block_undefined">
-            <li id="bank_pop_txt_acc">기업은행 30809456501010</li>
-        </ul>
-
-    </div>
-
-    <div id="bank_pop_btns" class="mcard_button2_row">
-        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
-            복사
-        </div>
-        <div class="mcard_button2" id="bank_pop_close_btn">
-            닫기
-        </div>
-    </div>
-
-
-</div>
 <div id="mask" style="position: fixed; z-index: 3; left: 0; top: 0; background-color: #000000; cursor: pointer; display: none; width: 100%; height: 100%;"></div>
-
+<div class="gla_music_icon">
+    <i class="ti ti-music"></i>
+</div>
+<div class="gla_music_icon_cont">
+    <iframe id="music" allow="autoplay" width="100%" height="300" scrolling="no" frameborder="no"  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/75628798&&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/chrisblem" title="ChrisBlem" target="_blank" style="color: #cccccc; text-decoration: none;">ChrisBlem</a> · <a href="https://soundcloud.com/chrisblem/beauty-and-the-beast-disney-on" title="Beauty and the Beast - Disney on Classic" target="_blank" style="color: #cccccc; text-decoration: none;">Beauty and the Beast - Disney on Classic</a></div>
+</div>
 
 <!-- Page -->
 <section class="gla_page" id="gla_page">
@@ -78,7 +54,7 @@
 
 
     <!-- To Top -->
-    <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
+    <!--    <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>-->
 
 
     <!-- Music -->
@@ -105,22 +81,21 @@
                 <div class="home-logo">
                     <div>
                         <h2 class="font3 couple-title">
-                            HARRISON X HAEWON
+                            HARRISON <b>+</b> HAEWON
                         </h2>
-                        <p class="invitation-text font6">다양한 색들이 반짝이는<br/>
-                            아름다운 세상에서 <br />
-                            저희 두 사람이 만나 <br/>
-                            하나의 빛을 내려고 합니다.<br />
-                            <br/>
-                            하나님의 말씀에 따라 <br />
-                            <br/>
-                            마음을 같이 하고 뜻을 합하여 <br/>
-                            아름다운 가정을 이루겠습니다.<br/>
-                            <br/>
-                            부디 오셔서 저희의 첫걸음을<br/>
-                            축복으로 더욱 빛내주시기를 바랍니다.</p>
-                        <p class="font6 invitation-text">10월 10일 오후 4:30
-                            <a class="font6 invitation-text" href="#where">드레스가든</a>
+                        <!--                        <h2 class="font3 couple-title">-->
+                        <!--                            HARRISON + HAEWON-->
+                        <!--                        </h2>-->
+                        <p class="invitation-text font6">
+                            On our fourth fall together,<br/>
+                            we will become husband and wife.<br/>
+                            We promise to stay each other's best friends<br/>
+                            and live together happily.<br />
+                            We hope that you can come and celebrate<br/>
+                            our happy day together.
+                        </p>
+                        <p class="font6 invitation-text">October 10th 4:30PM
+                            <a class="font6 invitation-text" href="#where">Dress Garden</a>
                         </p>
                         <img class="firstbg" src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/edited/wdup3.png"/>
 
@@ -139,10 +114,10 @@
 
     <section id="about" class="gla_section gla_image_bck contact_info" data-color="#FFFCF7" style="padding-bottom:0;">
         <div class="call container text-center">
-            <h2 class="sound font6">신랑 신부 연락정보</h2>
+            <h2 class="sound font6">Groom and Bride Contact Info</h2>
             <dl class="husband" style="padding-left:30px;">
                 <dt style="font-size: 17.6px;">
-                    <span class="blue font6" style="font-size: 18.6px;">신랑 주형률</span>
+                    <span class="blue font6" style="font-size: 18.6px;">Groom Harrison Ju</span>
                 </dt>
                 <dd><a href="tel:+16467715967" class="at_Groom_Phone font6" style="font-size: 14.08px;"><img src="img/call_icon.png" width="32" alt="전화 아이콘" style="width: 18.16px;"></a></dd>
                 <dd><a href="sms:+16467715967" class="as_Groom_Phone font6" style="font-size: 14.08px;">
@@ -151,7 +126,7 @@
             </dl>
             <dl class="wife" style="padding-left:30px;">
                 <dt style="font-size: 17.6px;">
-                    <span class="blue font6" style="font-size: 18.6px;">신부 최혜원</span>
+                    <span class="blue font6" style="font-size: 18.6px;">Bride Grace Choe</span>
                 </dt>
                 <dd><a href="tel:+16467715957" class="at_Bride_Phone" style="font-size: 14.08px;"><img src="img/call_icon.png" width="32" alt="전화 아이콘" style="width: 18.16px;"></a></dd>
                 <dd><a href="sms:+16467715957" class="as_Bride_Phone" style="font-size: 14.08px;"><img src="/img/sms_icon.png" width="36" alt="SMS 아이콘" style="width: 18.68px;"></a></dd>
@@ -160,11 +135,11 @@
                 <div class="list_wrap">
                     <ul>
                         <li>
-                            <h3 style="font-size: 13.2px;">신랑측 혼주</h3>
+                            <h3 style="font-size: 13.2px;">Groom's Parents</h3>
                             <div class="list_con" style="display: block;">
                                 <p style="font-size: 14.08px;">
-                                    <span class="i_Groom_Parents1_Title font6" style="font-size: 13.32px;">아버지</span>
-                                    <span class="i_Groom_Parents1_Name font6" style="font-size: 15.08px;">주창환</span>
+                                    <span class="i_Groom_Parents1_Title font6" style="font-size: 13.32px;">Father</span>
+                                    <span class="i_Groom_Parents1_Name font6" style="font-size: 15.08px;">Chang Ju</span>
                                 </p>
                                 <div class="btn_wrap">
                                     <a href="tel:+15865309038" class="at_Groom_Parents1_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/call_icon.png" width="25" alt="전화 아이콘" style="width: 18px;"></a>
@@ -173,8 +148,8 @@
                             </div>
                             <div class="list_con" style="display: block;">
                                 <p style="font-size: 14.08px;">
-                                    <span class="i_Groom_Parents2_Title font6" style="font-size: 13.32px;">어머니</span>
-                                    <span class="i_Groom_Parents2_Name font6" style="font-size: 15.08px;">이정진</span>
+                                    <span class="i_Groom_Parents2_Title font6" style="font-size: 13.32px;">Mother</span>
+                                    <span class="i_Groom_Parents2_Name font6" style="font-size: 15.08px;">Jane Ju</span>
                                 </p>
                                 <div class="btn_wrap">
                                     <a href="tel:+12482073778" class="at_Groom_Parents2_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/call_icon.png" width="25" alt="전화 아이콘" style="width: 18px;"></a>
@@ -183,21 +158,21 @@
                             </div>
                         </li>
                         <li>
-                            <h3 style="font-size: 13.2px;">신부측 혼주</h3>
+                            <h3 style="font-size: 13.2px;">Bride's Parents</h3>
                             <div class="list_con" style="display: block;">
                                 <p style="font-size: 14.08px;">
-                                    <span class="i_Bride_Parents1_Title font6" style="font-size: 13.32px;">아버지</span>
-                                    <span class="i_Bride_Parents1_Name font6" style="font-size: 15.08px;">최종국</span>
+                                    <span class="i_Bride_Parents1_Title font6" style="font-size: 13.32px;">Father</span>
+                                    <span class="i_Bride_Parents1_Name font6" style="font-size: 15.08px;">Jong Gook Choe</span>
                                 </p>
                                 <div class="btn_wrap">
-                                    <a href="tel:01024242474" class="at_Bride_Parents1_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/call_icon.png" width="25" alt="전화 아이콘" style="width: 18px;"></a>
-                                    <a href="sms:01024242474" class="as_Bride_Parents1_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/sms_icon.png" width="29" alt="SMS 아이콘" style="width: 18.52px;"></a>
+                                    <a href="tel:01024262474" class="at_Bride_Parents1_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/call_icon.png" width="25" alt="전화 아이콘" style="width: 18px;"></a>
+                                    <a href="sms:01024262474" class="as_Bride_Parents1_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/sms_icon.png" width="29" alt="SMS 아이콘" style="width: 18.52px;"></a>
                                 </div>
                             </div>
                             <div class="list_con" style="display: block;">
                                 <p style="font-size: 14.08px;">
-                                    <span class="i_Bride_Parents2_Title font6" style="font-size: 13.32px;">어머니</span>
-                                    <span class="i_Bride_Parents2_Name font6" style="font-size: 15.08px;">박순란</span>
+                                    <span class="i_Bride_Parents2_Title font6" style="font-size: 13.32px;">Mother</span>
+                                    <span class="i_Bride_Parents2_Name font6" style="font-size: 15.08px;">Soon Lan Park</span>
                                 </p>
                                 <div class="btn_wrap">
                                     <a href="tel:01057922474" class="at_Bride_Parents2_Phone" style="font-size: 14.08px; display: inline;"><img src="/img/call_icon.png" width="25" alt="전화 아이콘" style="width: 18px;"></a>
@@ -227,9 +202,10 @@
 
             <h2 class="story-logo">OUR STORY</h2>
             <p class="font6">
-                4년 전 가을,  기도모임에서 처음 만났습니다.<br/>
-                그리고 우리의 만남에 하나님이 계심에 감사하며<br/>
-                2022년 가을, 믿음 안에서 하나가 되는 서약을 하려고 합니다.
+                4 years ago on a fall morning, we met at morning prayer at church.<br/>
+                Soon after, we started dating, and it wasn't long after<br/>
+                we knew we wanted to spend the rest of our lives together.<br/>
+                Just like the morning we met, we plan to get married in fall of 2022.<br/>
             </p>
 
             <!-- icon boxes -->
@@ -309,6 +285,9 @@
                             height="320" alt=""></a>
                 </div>
             </div>
+            <p class="font7">
+                ※ Click on image to see photos closely.
+            </p>
         </div>
     </section>
     <!-- section end -->
@@ -323,12 +302,12 @@
         <div class="container text-center">
             <!--                <p><img src="img/animations/savethedate_wh.gif" data-bottom-top="@src:img/animations/savethedate_wh.gif" height="150" alt=""></p>-->
             <h2 class="story-logo mobile-footer location-header">LOCATION</h2>
-            <p class="font6" style="text-decoration:underline;">드레스가든</p>
-            <p class="font6">서울특별시 강남구 청담동 영동대로 707</p>
-            <p class="font6">2022년 10월 10일 월요일 오후 4:30</p>
+            <p class="font6" style="text-decoration:underline;">Dress Garden</p>
+            <p class="font6">707 Yeongdong-daero, Cheongdam-dong, Gangnam-gu, Seoul, South Korea</p>
+            <p class="font6">October 10th 2022, Monday 4:30PM</p>
             <a href="tel:02-512-1000">
                 <div class="tel_ask_btn">
-                    전화문의
+                    Help
                 </div>
             </a>
             <div class="iframe-wrapper map">
@@ -338,29 +317,28 @@
             <div id="map_text">
                 <div class="map_text_row">
                     <div style="font-size:15px;">
-                        자가용                    </div>
+                        Navigating Through Korea                    </div>
                     <div style="font-size:12px;">
-                        주소검색: 서울시 강남구 청담동 71-8
+                        You can download naver maps in Korea for GPS help.<br/>
+                        The receptionist at the hotel will also help you call a taxi<br/>
+                        to get to wherever you need during your stay in Korea.
                     </div>
                 </div>
                 <div class="map_text_row">
                     <div style="font-size:15px;">
-                        지하철                    </div>
+                        Requirements Before Travel                    </div>
                     <div style="font-size:12px;">
-                        7호선 청담역 13번 출구 정면
+                        You need to fill out K-ETA which will grant you your travel visa.<br/>
+                        You can also buy pre-paid sim cards to get a phone number/internet access during your stay.<br/>
+                        They can be found easily at the airport.
                     </div>
                 </div>
                 <div class="map_text_row">
                     <div style="font-size:15px;">
-                        버스                    </div>
+                        ETC                    </div>
                     <div style="font-size:12px;">
-                        청담역, 경기고교, 청담삼익아파트, 우리은행 청담지점 하차             </div>
+                        Feel free to reach out if you need any help or tips.             </div>
                 </div>
-                <p style="font-size:10.8px;">
-                    주차안내 : 주차가 혼란할 수 있으니 대중교통 이용 바랍니다.
-                    <br/>
-                    ※ SUV, 대형세단은 주차가 어려울 수 있으니 대중교통 이용을 권장드립니다.
-                </p>
             </div>
         </div>
         <!-- container end -->
@@ -368,15 +346,19 @@
     </section>
     <div style="height:5vh;"></div>
     <!-- section end -->
-
     <section id="thankyou" class="gla_section gla_image_bck gla_fixed gla_black_txt" data-stellar-background-ratio="0.8" style="height:auto;">
         <div>
             <h2 class="title_color story-logo" style="color:#10154B;">THANK YOU</h2>
             <p class="font6" >
-                허락하신 행복 늘 감사하며 살겠습니다.<br/>
-                설레고 감사한 순간에 함께해 주셔서 감사합니다. </p>
+                We promise to live happily together.<br/>
+                Big thank you to everyone.</p>
         </div>
         <div class="gla_icon_boxes gla_partners row pictures pictures-center">
+            <div id=91 class="gla_partner_box">
+                <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00809.jpg"><img
+                        src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00809.jpg"
+                        height="320" alt=""></a>
+            </div>
             <div id=13 class="gla_partner_box">
                 <a class="lightbox" href="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00777.jpg"><img
                         src="https://hh-weddingphotos.nyc3.digitaloceanspaces.com/DSC00777.jpg"                               height="320" alt=""></a>
@@ -410,5 +392,6 @@
     <script src="js/mobile-stuff.js"></script>
 
 
+</section>
 </body>
 </html>
